@@ -2,8 +2,8 @@ import { defineConfig } from "vuepress/config";
 
 
 module.exports = defineConfig({
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: '一斤阳夕',
+  description: 'A pound of sunset',
   themeConfig: {
     repo: "vuejs/vuepress",
     editLinks: true,
