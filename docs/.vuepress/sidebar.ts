@@ -1,32 +1,32 @@
-module.exports = {
-  '/': [
+import type { SidebarConfig } from '@vuepress/theme-default'
+
+export const sidebarZh: SidebarConfig = {
+  // '/': [
+  //   {
+  //     title: 'Home',
+  //     collapsable: true,
+  //     children: ['']
+  //   },
+  // ],
+  '/web/': [
     {
-      title: 'Home',
-      collapsable: true,
-      children: ['']
+      title: 'Typescript',
+      children: [
+        '/web/typescript/typescript1.md',
+        '/web/typescript/typescript2.md',
+      ]
     },
-    {
-      title: 'Categories',
-      collapsable: true,
-      children: ['/typescriptMD/']
-    }
   ],
-  '/typescriptMD/': [
-    {
-      title: 'Typescript Group1',
-      collapsable: true,
-      children: [
-        '/typescriptMD/Typescript1',
-        '/typescriptMD/Typescript2',
-      ]
-    },
-    {
-      title: 'Typescript Group2',
-      collapsable: true,
-      children: [
-        '/typescriptMD/Typescript1',
-        '/typescriptMD/Typescript2',
-      ]
-    }
+  'serverMD': [
+    
+  ],
+  'flutterMD': [
+    
+  ],
+  'docMD': [
+    
+  ],
+  'github': [
+    
   ]
 }

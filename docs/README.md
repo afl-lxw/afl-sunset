@@ -1,1 +1,4 @@
-# This is the home page of my blog
+# A pound of sunset
+
+![Background Image](./.vuepress/public/images/background.png)
+
