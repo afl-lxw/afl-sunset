@@ -1,15 +1,16 @@
 import { defineConfig } from "vuepress/config";
-
+import dayjs from 'dayjs';
 
 module.exports = defineConfig({
-  title: '一斤阳夕',
+  // title: '一斤阳夕',
+  title: 'A pound of sunset',
   description: 'A pound of sunset',
   plugins: {
-    "@vuepress/pwa": {
-      serviceWorker: true
-    },
-    "@vuepress/register-components": {
-      componentsDir: "./components"
+    '@vuepress/last-updated': {
+      transformer: (timestamp, lang) => {
+        dayjs.locale(lang);
+        return dayjs(timestamp).format('YYYY-MM-DD HH:mm:ss');
+      }
     }
   },
   configureWebpack: {
@@ -20,24 +21,7 @@ module.exports = defineConfig({
     }
   },
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Posts', link: '/posts/' },
-      { text: 'About', link: '/about/' },
-    ],
-    sidebar: {
-      '/posts/': [
-        {
-          title: 'Posts',
-          collapsable: false,
-          children: [
-            '',
-            'post1',
-            'post2',
-          ]
-        }
-      ]
-    },
-    lastUpdated: 'Last Updated',
+    nav: require('./nav'),
+    sidebar: require('./sidebar'),
   },
 }) 
