@@ -12,3 +12,5 @@
 | Cupertino | iOS 平台风格的扁平化 |
 
 ## **widget 分类**
+
+![widget Image](~@images/flutter/widget.png)

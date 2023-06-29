@@ -4,6 +4,7 @@ import { sidebarZh } from './sidebar'
 import { navbarZh } from './nav'
 import { defaultTheme } from '@vuepress/theme-default'
 import markdown from 'markdown-it-front-matter'
+import markdownUrl from 'markdown-it-disable-url-encode'
 
 module.exports = defineConfig({
   // title: '一斤阳夕',
@@ -21,7 +22,7 @@ module.exports = defineConfig({
   configureWebpack: {
     resolve: {
       alias: {
-        '@images': '/images'
+        '@images': './public/images'
       }
     }
   },
@@ -35,7 +36,8 @@ module.exports = defineConfig({
     // 设置 Markdown 文件的 Front Matter
     extendMarkdown: (md) => {
       md.use(markdown)
-
+      md.set({ breaks: true })
+      md.use(markdownUrl, "./")
       // 在这里设置 Front Matter 的处理逻辑
       md.renderer.rules.front_matter = (tokens, idx) => {
         const frontMatter = tokens[idx].content

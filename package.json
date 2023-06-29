@@ -11,6 +11,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "markdown-it-disable-url-encode": "^1.0.1",
     "markdown-it-front-matter": "^0.2.3",
     "vuepress": "^1.9.9"
   },

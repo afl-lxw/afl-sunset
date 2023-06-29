@@ -17,8 +17,20 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/server/': [
-    
+  '/service/': [
+    "",
+    {
+      title: 'nodejs',
+      children: [
+        '/service/node/',
+      ]
+    },
+    {
+      title: 'Golang',
+      children: [
+        '/service/Go/',
+      ]
+    }
   ],
   '/flutter/': [
     "",
@@ -41,13 +53,4 @@ export const sidebarZh: SidebarConfig = {
   'github': [
     
   ],
-  '/about/': [
-    '',
-    {
-      title: 'widget',
-      children: [
-        '/about/widget/typescript',
-      ]
-    },
-  ]
 }
