@@ -5,15 +5,15 @@ import { navbarZh } from './nav'
 import { defaultTheme } from '@vuepress/theme-default'
 import markdown from 'markdown-it-front-matter'
 import markdownUrl from 'markdown-it-disable-url-encode'
-import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
+// import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
 module.exports = defineUserConfig({
   // title: '一斤阳夕',
   title: 'A pound of sunset',
   description: 'A pound of sunset',
   plugins: [
-    activeHeaderLinksPlugin({
-      headerAnchorSelector: '.header-anchor'
-    }),
+    // activeHeaderLinksPlugin({
+    //   headerAnchorSelector: '.header-anchor'
+    // }),
   ],
   // theme: 'vuepress-theme-default',
   theme: defaultTheme({
