@@ -16,7 +16,10 @@ module.exports = defineConfig({
         dayjs.locale(lang);
         return dayjs(timestamp).format('YYYY-MM-DD HH:mm:ss');
       }
-    }
+    },
+    '@vuepress/plugin-active-header-links': {
+      sidebarLinkSelector: '.sidebar-link',
+    },
   },
   // theme: 'vuepress-theme-default',
   configureWebpack: {
@@ -32,6 +35,7 @@ module.exports = defineConfig({
     sidebar: sidebarZh,
     docsDir: 'docs/',
   },
+  // theme: './.vuepress/theme/Layout.vue',
   markdown: {
     // 设置 Markdown 文件的 Front Matter
     extendMarkdown: (md) => {

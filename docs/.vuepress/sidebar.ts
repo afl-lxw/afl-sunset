@@ -16,6 +16,18 @@ export const sidebarZh: SidebarConfig = {
         '/web/threejs/install',
       ]
     },
+    {
+      title: 'webGL',
+      children: [
+        '/web/webGL/',
+      ]
+    },
+    {
+      title: 'CICD',
+      children: [
+        '/web/webGL/',
+      ]
+    },
   ],
   '/service/': [
     "",
@@ -29,6 +41,12 @@ export const sidebarZh: SidebarConfig = {
       title: 'Golang',
       children: [
         '/service/Go/',
+      ]
+    },
+    {
+      title: 'Docker',
+      children: [
+        '/service/Docker/',
       ]
     }
   ],
