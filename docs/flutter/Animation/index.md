@@ -66,7 +66,7 @@ AnimationController({
 ### 实例
 
 ```dart
-class _MyHomePageState extends State<MyHomePage> with SingleTickerProvider特性StateMixin  //具备TickerProvider特性
+class _MyHomePageState extends State<MyHomePage> with SingleTickerProvider  //具备TickerProvider特性
 
 //定义动画初始值
 AnimationController _controller;

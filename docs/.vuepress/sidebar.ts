@@ -59,6 +59,7 @@ export const sidebarZh: SidebarConfig = {
       title: 'widget',
       children: [
         '/flutter/widget/',
+        '/flutter/widget/组件导航.md',
       ]
     },
     {
