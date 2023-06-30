@@ -13,4 +13,4 @@
 
 ## **widget 分类**
 
-<!-- ![widget Image](~@images/flutter/widget.png) -->
+![widget Image](/images/flutter/widget.png)
