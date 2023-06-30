@@ -2,36 +2,47 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
   '/web/': [
-    '',
     {
-      title: 'Typescript',
+      text: 'Javascript',
+      collapsible: true,
       children: [
-        '/web/typescript/typescript',
-        '/web/typescript/typescript2.md',
+        '/web/javascript/设计模式.md',
       ]
     },
     {
-      title: 'THREE.js',
+      text: 'Typescript',
+      collapsible: true,
       children: [
-        '/web/threejs/install',
+        '/web/typescript/范型.md',
+        '/web/typescript/Utility-Types.md',
       ]
     },
     {
-      title: 'webGL',
+      text: 'THREE.js',
+      collapsible: true,
+      children: [
+        '/web/threejs/',
+      ]
+    },
+    {
+      text: 'webGL',
+      collapsible: true,
       children: [
         '/web/webGL/',
       ]
     },
     {
-      title: 'CICD',
+      text: 'CICD',
+      collapsible: true,
       children: [
-        '/web/webGL/',
+        '/web/CICD/',
       ]
     },
   ],
   '/service/node': [
     {
-      title: 'nodejs',
+      text: 'nodejs',
+      collapsible: true,
       children: [
         '/service/node/',
       ]
@@ -39,7 +50,8 @@ export const sidebarZh: SidebarConfig = {
   ],
   '/service/Go': [
     {
-      title: 'Golang',
+      text: 'Golang',
+      collapsible: true,
       children: [
         '/service/Go/',
       ]
@@ -47,32 +59,31 @@ export const sidebarZh: SidebarConfig = {
   ],
   '/service/Docker': [
     {
-      title: 'Golang',
+      text: 'Golang',
+      collapsible: true,
       children: [
         '/service/Docker/',
       ]
     },
   ],
   '/flutter/': [
-    "",
     {
-      title: 'widget',
+      text: 'widget',
+      collapsible: true,
       children: [
         '/flutter/widget/',
         '/flutter/widget/组件导航.md',
       ]
     },
     {
-      title: 'Animation',
+      text: 'Animation',
+      collapsible: true,
       children: [
         '/flutter/Animation/',
       ]
     },
   ],
   'docMD': [
-    
-  ],
-  'github': [
     
   ],
 }

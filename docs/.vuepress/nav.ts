@@ -17,6 +17,5 @@ export const navbarZh: NavbarConfig  = [
     ]
   },
   { text: '文档', link: '/docMD/' },
-  { text: 'Github', link: '/github/' },
 ]
 
