@@ -3,13 +3,13 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 export const navbarZh: NavbarConfig  = [
   { text: '首页', link: '/' },
   { text: '前端',
-    items: [
+    children: [
       { text: 'Web', link: '/web/' },
       { text: 'Flutter', link: '/flutter/' },
     ]
   },
   { text: 'service', 
-    items: [
+    children: [
       { text: "Nodejs", link: '/service/node/' },
       { text: "Golang", link: '/service/Go/' },
       { text: "Docker", link: '/service/Docker/' },
@@ -17,6 +17,5 @@ export const navbarZh: NavbarConfig  = [
     ]
   },
   { text: '文档', link: '/docMD/' },
-  { text: 'Github', link: '/github/' },
 ]
 
