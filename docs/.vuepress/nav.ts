@@ -8,7 +8,14 @@ export const navbarZh: NavbarConfig  = [
       { text: 'Flutter', link: '/flutter/' },
     ]
   },
-  { text: 'service', link: '/service/'},
+  { text: 'service', 
+    items: [
+      { text: "Nodejs", link: '/service/node/' },
+      { text: "Golang", link: '/service/Go/' },
+      { text: "Docker", link: '/service/Docker/' },
+
+    ]
+  },
   { text: '文档', link: '/docMD/' },
   { text: 'Github', link: '/github/' },
 ]

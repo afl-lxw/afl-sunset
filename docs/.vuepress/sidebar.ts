@@ -29,26 +29,29 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/service/': [
-    "",
+  '/service/node': [
     {
       title: 'nodejs',
       children: [
         '/service/node/',
       ]
     },
+  ],
+  '/service/Go': [
     {
       title: 'Golang',
       children: [
         '/service/Go/',
       ]
     },
+  ],
+  '/service/Docker': [
     {
-      title: 'Docker',
+      title: 'Golang',
       children: [
         '/service/Docker/',
       ]
-    }
+    },
   ],
   '/flutter/': [
     "",
