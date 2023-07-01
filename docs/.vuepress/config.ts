@@ -28,7 +28,7 @@ module.exports = defineUserConfig({
     colorModeSwitch: true,
     navbar: navbarZh,
     sidebar: sidebarZh,
-    docsDir: 'docs/',
+    // docsDir: 'docs/',
     notFound: ['孩子找不到回家的路了', '瞎点什么呢', '你是不是迷路了'],
   }),
   // theme: './.vuepress/theme/Layout.vue',
