@@ -1,6 +1,6 @@
 ---
 home: true
-title: Sunset
+title: A Sunset
 navbar: true
 heroImage: /images/logo.png
 heroHeight: 400
