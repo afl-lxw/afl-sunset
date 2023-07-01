@@ -6,26 +6,26 @@ export const sidebarZh: SidebarConfig = {
       text: 'Javascript',
       collapsible: true,
       children: [
-        '/web/javascript/设计模式.md',
+        '/web/Javascript/设计模式.md',
       ]
     },
     {
       text: 'Typescript',
       collapsible: true,
       children: [
-        '/web/typescript/范型.md',
-        '/web/typescript/Utility-Types.md',
+        '/web/Typescript/范型.md',
+        '/web/Typescript/Utility-Types.md',
       ]
     },
     {
       text: 'THREE.js',
       collapsible: true,
       children: [
-        '/web/threejs/',
+        '/web/Threejs/',
       ]
     },
     {
-      text: 'webGL',
+      text: 'WebGL',
       collapsible: true,
       children: [
         '/web/webGL/',
@@ -36,6 +36,27 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/web/CICD/',
+      ]
+    },
+    {
+      text: 'Vue',
+      collapsible: true,
+      children: [
+        '/web/Vue/',
+      ]
+    },
+    {
+      text: 'Webpack',
+      collapsible: true,
+      children: [
+        '/web/Webpack/',
+      ]
+    },
+    {
+      text: 'React',
+      collapsible: true,
+      children: [
+        '/web/React/',
       ]
     },
   ],
