@@ -2,11 +2,11 @@
 home: true
 title: A Sunset
 navbar: true
-heroImage: /images/background.png
-heroImageDark: /images/background.png
+heroImage: /images/user-avatar.png
+heroImageDark: /images/user-avatar-dark.png
 heroHeight: 280
-heroText: A pound of sunset
-tagline: Where there is a will, there is a way.
+heroText: Where there is a will, there is a way
+tagline: 
 pageClass: home-page
 # actions:
 #   - text: Start

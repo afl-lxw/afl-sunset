@@ -22,8 +22,8 @@ module.exports = defineUserConfig({
   ],
   
   theme: defaultTheme({
-    logo: '/images/logo.png',
-    logoDark: '/images/logoDark.png',
+    logo: '/images/user-avatar.png',
+    logoDark: '/images/user-avatar.png',
     repo: 'https://github.com/afl-lxw',
     lastUpdated: true,
     colorModeSwitch: true,
