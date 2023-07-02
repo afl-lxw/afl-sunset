@@ -50,6 +50,15 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/web/Webpack/',
+        '/web/Webpack/构建流程',
+        '/web/Webpack/理解',
+        '/web/Webpack/提高构建速度',
+        '/web/Webpack/优化前端性能',
+        '/web/Webpack/Loader',
+        '/web/Webpack/Loader和Plugin',
+        '/web/Webpack/Plugin',
+        '/web/Webpack/webpack_proxy',
+        '/web/Webpack/webpack热更新',
       ]
     },
     {
@@ -104,7 +113,33 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  'docMD': [
-    
+  '/docMD/Git/': [
+    {
+      text: 'Git',
+      collapsible: true,
+      children: [
+        '/docMD/Git/版本控制',
+        '/docMD/Git/分支新建与合并',
+      ]
+    },
   ],
+  '/docMD/Mac/': [
+    {
+      text: 'Mac',
+      collapsible: true,
+      children: [
+        '/docMD/Mac/菜单大小调整',
+        '/docMD/Mac/微信双开',
+      ]
+    },
+  ],
+  '/docMD/Order/': [
+    {
+      text: 'Order',
+      collapsible: true,
+      children: [
+        '/docMD/Order/',
+      ]
+    },
+  ]
 }

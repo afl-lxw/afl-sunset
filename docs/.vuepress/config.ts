@@ -1,4 +1,4 @@
-import { defineUserConfig } from 'vuepress'
+import { defineUserConfig, DefaultThemeOptions } from 'vuepress'
 import dayjs from 'dayjs';
 import { sidebarZh } from './sidebar'
 import { navbarZh } from './nav'
@@ -20,6 +20,7 @@ module.exports = defineUserConfig({
       hotKeys: [{ key: 'K', ctrl: true}]
     }),
   ],
+  
   theme: defaultTheme({
     logo: '/images/logo.png',
     logoDark: '/images/logoDark.png',

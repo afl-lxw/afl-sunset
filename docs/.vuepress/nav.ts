@@ -16,6 +16,22 @@ export const navbarZh: NavbarConfig  = [
 
     ]
   },
-  { text: '文档', link: '/docMD/' },
+  { text: '文档', 
+    children: [
+      { 
+        text: "有点意思",
+        children: [
+          { text: "小技巧", link: '/docMD/Order/' },
+        ]
+      },
+      {
+        text: "其他",
+        children: [
+          { text: "Mac", link: '/docMD/Mac/' },
+          { text: "Git", link: '/docMD/Git/' },
+        ]
+      }
+    ]
+  },
 ]
 

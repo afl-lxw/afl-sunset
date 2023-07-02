@@ -27,7 +27,7 @@
   --c-border-dark: #dfe2e5;
 
   // custom container colors
-  --c-tip: #42b983;
+  --c-tip: #008080;
   --c-tip-bg: var(--c-bg-light);
   --c-tip-title: var(--c-text);
   --c-tip-text: var(--c-text);
@@ -175,8 +175,8 @@ html.dark {
   }
 
   // brand colors
-  --c-brand: #3aa675;
-  --c-brand-light: #349469;
+  --c-brand: #008080;
+  --c-brand-light: #008080;
 
   // background colors
   --c-bg: #22272e;
@@ -196,7 +196,7 @@ html.dark {
   --c-border-dark: #34404c;
 
   // custom container colors
-  --c-tip: #318a62;
+  --c-tip: #008080;
   --c-warning: #e0ad15;
   --c-warning-bg: #2d2f2d;
   --c-warning-bg-light: #423e2a;
@@ -256,3 +256,8 @@ body::before {
   background-image: url(https://gw.alipayobjects.com/zos/bmw-prod/a6c3488a-994c-4dd3-8e92-2324d9a1ca48/l9dmd9wl_w2858_h1864.png);
 }
 
+.navbar-dropdown {
+  &:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+}
