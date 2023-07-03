@@ -60,11 +60,11 @@ Vue的核心代码只关注视图层.
 
 Vue利用在内存中生成与真实DOM相对应的数据结构,这个在内存中生成的结构称之为虚拟DOM.
 
-<img src="img/progress.png" width="500" height="300">
+![img/progress.png](/img/progress.png)
 
 当数据发生改变时,能够智能的计算出重新渲染组件的最小代价并应用到DOM操作上.
 
-<img src="img/DOM.png" width="500" height="300">
+![img/DOM.png](/img/DOM.png)
 
 document本身就是浏览器将标签抽取出来作为对象.
 Vue则是通过rander方法将模版抽取成为虚拟DOM,在虚拟DOM改变时,对比改变前和改变后的结构,以最小的代价重新渲染真实DOM.虚拟DOM在js中的表现就是树状的对象结构。
