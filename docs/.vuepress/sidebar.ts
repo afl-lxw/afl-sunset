@@ -1,7 +1,7 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
-  '/web/': [
+  '/web/Javascript/': [
     {
       text: 'Javascript',
       collapsible: true,
@@ -9,6 +9,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/Javascript/设计模式.md',
       ]
     },
+  ],
+  "/web/Typescript/": [
     {
       text: 'Typescript',
       collapsible: true,
@@ -17,6 +19,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/Typescript/Utility-Types.md',
       ]
     },
+  ],
+  "/web/Threejs/": [
     {
       text: 'THREE.js',
       collapsible: true,
@@ -24,6 +28,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/Threejs/',
       ]
     },
+  ],
+  "/web/WebGL/": [
     {
       text: 'WebGL',
       collapsible: true,
@@ -31,6 +37,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/webGL/',
       ]
     },
+  ],
+  "/web/CICD/": [
     {
       text: 'CICD',
       collapsible: true,
@@ -38,6 +46,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/CICD/',
       ]
     },
+  ],
+  "/web/Vue/": [
     {
       text: 'Vue',
       collapsible: true,
@@ -45,6 +55,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/Vue/',
       ]
     },
+  ],
+  "/web/Webpack/": [
     {
       text: 'Webpack',
       collapsible: true,
@@ -61,6 +73,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/Webpack/webpack热更新',
       ]
     },
+  ],
+  "/web/React/":[
     {
       text: 'React',
       collapsible: true,
@@ -69,7 +83,7 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/service/node': [
+  '/service/node/': [
     {
       text: 'nodejs',
       collapsible: true,
@@ -78,7 +92,7 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/service/Go': [
+  '/service/Go/': [
     {
       text: 'Golang',
       collapsible: true,
@@ -87,7 +101,7 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/service/Docker': [
+  '/service/Docker/': [
     {
       text: 'Golang',
       collapsible: true,

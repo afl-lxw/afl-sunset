@@ -4,8 +4,23 @@ export const navbarZh: NavbarConfig  = [
   { text: '首页', link: '/' },
   { text: '前端',
     children: [
-      { text: 'Web', link: '/web/' },
-      { text: 'Flutter', link: '/flutter/' },
+      { text: 'Web',
+        children: [
+          { text: 'Javascript', link: '/web/Javascript/' },
+          { text: 'Typescript', link: '/web/Typescript/' },
+          { text: 'Vue', link: '/web/Vue/' },
+          { text: 'Webpack', link: '/web/Webpack/' },
+          { text: 'CICD', link: '/web/CICD/' },
+          { text: 'WebGL', link: '/web/WebGL/' },
+          { text: 'THREE.js', link: '/web/Threejs/' },
+          { text: 'React', link: '/web/React/' },
+        ]  
+      },
+      { text: '混合开发', 
+        children:[
+          { text: 'Flutter', link: '/Flutter/' },
+        ] 
+      },
     ]
   },
   { text: 'service', 
