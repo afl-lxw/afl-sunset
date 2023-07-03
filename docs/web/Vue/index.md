@@ -1965,8 +1965,6 @@ export default Vue.extend({
 - 如果路径以 `~` 开头，其后的部分将会被看作模块依赖。这意味着你可以用该特性来引用一个 node（NPM 包） 依赖中的资源，如：`<img src="~some-npm-package/a.png">`
 - 如果路径以 `@` 开头，也会被看作模块依赖。如果你的 webpack 配置中给 `@` 配置了 alias，这就很有用了。所有 `vue-cli` 创建的项目都默认配置了将 `@` 指向 `/src`
 
-![Vue 生命周期](F:/JAVAScript---%E7%BD%91%E7%9B%98%E8%B5%84%E6%96%99/%E5%BC%80%E8%AF%BE%E5%90%A7%E7%AC%AC%E4%BA%94%E6%9C%9F/%E8%AF%BE%E4%BB%B6/Web%E5%89%8D%E7%AB%AF%E9%AB%98%E7%BA%A7%E5%B7%A5%E7%A8%8B%E5%B8%88005%E6%9C%9F%E8%AF%BE%E4%BB%B6/Web%E5%89%8D%E7%AB%AF%E9%AB%98%E7%BA%A7%E5%B7%A5%E7%A8%8B%E5%B8%88005%E6%9C%9F%E8%AF%BE%E4%BB%B6/15.%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0%20Vue/%E7%AC%AC3%E8%8A%82%20Vue%EF%BC%88%E4%B8%89%EF%BC%89/2020-02-26%EF%BC%88vue03%EF%BC%89/%E8%AF%BE%E4%BB%B6/assets/lifecycle.png)
-
 ## 组件生命周期
 
 组件生命周期指的是组件从创建到销毁的过程，在这个过程中的一些不同的阶段，`vue` 会调用指定的一些组件方法
@@ -2704,7 +2702,6 @@ new Vue({
 - `v-leave-active`：定义离开过渡生效时的状态。在整个离开过渡的阶段中应用，在离开过渡被触发时立刻生效，在过渡/动画完成之后移除。这个类可以被用来定义离开过渡的过程时间，延迟和曲线函数
 - `v-leave-to`: **2.1.8版及以上** 定义离开过渡的结束状态。在离开过渡被触发之后下一帧生效 (与此同时 `v-leave` 被删除)，在过渡/动画完成之后移除
 
-![Transition Diagram](F:/JAVAScript---%E7%BD%91%E7%9B%98%E8%B5%84%E6%96%99/%E5%BC%80%E8%AF%BE%E5%90%A7%E7%AC%AC%E4%BA%94%E6%9C%9F/%E8%AF%BE%E4%BB%B6/Web%E5%89%8D%E7%AB%AF%E9%AB%98%E7%BA%A7%E5%B7%A5%E7%A8%8B%E5%B8%88005%E6%9C%9F%E8%AF%BE%E4%BB%B6/Web%E5%89%8D%E7%AB%AF%E9%AB%98%E7%BA%A7%E5%B7%A5%E7%A8%8B%E5%B8%88005%E6%9C%9F%E8%AF%BE%E4%BB%B6/15.%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0%20Vue/%E7%AC%AC3%E8%8A%82%20Vue%EF%BC%88%E4%B8%89%EF%BC%89/2020-02-26%EF%BC%88vue03%EF%BC%89/%E8%AF%BE%E4%BB%B6/assets/transition.png)
 
 ```html
 <!DOCTYPE html>

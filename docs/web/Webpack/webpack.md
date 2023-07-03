@@ -16,7 +16,7 @@ WebPack可以看做是模块打包机：它做的事情是，分析你的项目�
 
 Webpack真正热起来是由于对React中的HMR(Hot Module Replacement)热刷新技术进行了支持，并且现在很好的作为工具为Vue等框架的项目开发提供了支持。
 
-<img src="img/webpack.png" width="800" height="300">
+![img/webpack.png](img/webpack.png)
 
 Webpack以项目目录下的index.js作为入口，使用加载器Loader加载不同类型的资源并打包，在打包的过程中可以使用插件对打包内容进行修饰，最后ouput输出一个合并后的文件。非常适合团队合作，迭代，打包，代码分割。
 

@@ -2287,7 +2287,6 @@ npm init
 
 依次按提示填入包名、版本、描述、github地址、关键字、license等
 
-![](https://img-blog.csdn.net/20180908174017676?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhb2VyY2h1bg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 这步完成之后会生成一个package.json文件，上面输入的这些信息可以在该文件中修改
 
@@ -2618,8 +2617,6 @@ let mmModel=hm.model('mm',{
 
 
 ## cookie
-
-![image-20200708233538908](C:\Users\10796\Pictures\image-20200708233538908.png)
 
 
 
