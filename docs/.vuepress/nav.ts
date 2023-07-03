@@ -28,7 +28,6 @@ export const navbarZh: NavbarConfig  = [
       { text: "Nodejs", link: '/service/node/' },
       { text: "Golang", link: '/service/Go/' },
       { text: "Docker", link: '/service/Docker/' },
-
     ]
   },
   { text: '文档', 

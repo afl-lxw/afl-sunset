@@ -2,23 +2,64 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
   '/web/Javascript/': [
+    '/web/Javascript/设计模式.md',
+    '/web/Javascript/JS高级.md',
+    '/web/Javascript/Zepto.md',
     {
-      text: 'Javascript',
+      text: 'Sass、Less',
       collapsible: true,
       children: [
-        '/web/Javascript/设计模式.md',
+        '/web/Javascript/Less and Sass/Less and Sass.md',
+        '/web/Javascript/Less and Sass/1、相关介绍.md',
+        '/web/Javascript/Less and Sass/2、环境配置.md',
+        '/web/Javascript/Less and Sass/3、SassScript.md',
+      ]
+    },
+    {
+      text: 'html5',
+      collapsible: true,
+      children: [
+        '/web/Javascript/HTML5/HTML5.md',
+        '/web/Javascript/HTML5/弹性盒子.md',
+      ]
+    },
+    {
+      text: '移动端',
+      collapsible: true,
+      children: [
+        '/web/Javascript/移动端/移动端.md',
+      ]
+    },
+    {
+      text: 'ES6',
+      collapsible: true,
+      children: [
+        '/web/Javascript/ES6/01.ECMAScript 6 简介.md',
+        '/web/Javascript/ES6/02.let与const.md',
+        '/web/Javascript/ES6/03 解构赋值.md',
+        '/web/Javascript/ES6/04 字符串新特性.md',
+        '/web/Javascript/ES6/05 字符串新方法.md',
+        '/web/Javascript/ES6/06 数值新特性.md',
+        '/web/Javascript/ES6/07 ES5 数组变化.md',
+        '/web/Javascript/ES6/08 数组新特性.md',
+        '/web/Javascript/ES6/09 对象新特性.md',
+        '/web/Javascript/ES6/10 对象新方法.md',
+        '/web/Javascript/ES6/11 函数新方法.md',
+        '/web/Javascript/ES6/12 新增数据类型和数据结构.md',
+        '/web/Javascript/ES6/13 遍历器.md',
+        '/web/Javascript/ES6/14 生成器 Generator.md',
+        '/web/Javascript/ES6/15 Proxy.md',
+        '/web/Javascript/ES6/16 Peflect.md',
+        '/web/Javascript/ES6/17 Class 基本语法.md',
+        '/web/Javascript/ES6/18 Class 的继承.md',
       ]
     },
   ],
   "/web/Typescript/": [
-    {
-      text: 'Typescript',
-      collapsible: true,
-      children: [
-        '/web/Typescript/范型.md',
-        '/web/Typescript/Utility-Types.md',
-      ]
-    },
+
+    '/web/Typescript/范型.md',
+    '/web/Typescript/Utility-Types.md',
+
   ],
   "/web/Threejs/": [
     {
@@ -30,11 +71,14 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   "/web/WebGL/": [
+    '/web/webGL/',
+    '/web/webGL/原理.md',
     {
-      text: 'WebGL',
+      text: 'Canvas',
       collapsible: true,
       children: [
-        '/web/webGL/',
+        '/web/WebGL/Canvas/canvas.md',
+        '/web/WebGL/Canvas/konva.md',
       ]
     },
   ],
@@ -74,7 +118,7 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  "/web/React/":[
+  "/web/React/": [
     {
       text: 'React',
       collapsible: true,
