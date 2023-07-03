@@ -71,8 +71,8 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   "/web/WebGL/": [
-    '/web/webGL/',
-    '/web/webGL/原理.md',
+    '/web/WebGL/',
+    '/web/WebGL/原理.md',
     {
       text: 'Canvas',
       collapsible: true,
@@ -92,11 +92,26 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   "/web/Vue/": [
+    "/web/Vue/vuex",
+    "/web/Vue/vue组件之间通信方式",
     {
-      text: 'Vue',
+      text: 'vue-router',
       collapsible: true,
       children: [
-        '/web/Vue/',
+        '/web/Vue/vue-router/1-vue-router',
+        '/web/Vue/vue-router/2-异步请求',
+        '/web/Vue/vue-router/3-devTools',
+        '/web/Vue/vue-router/4-动态路由',
+        '/web/Vue/vue-router/5-queryString',
+        '/web/Vue/vue-router/6-路由守卫',
+        '/web/Vue/vue-router/7-嵌套路由',
+        '/web/Vue/vue-router/8-重定向与别名',
+        '/web/Vue/vue-router/9-路由组件传参',
+        '/web/Vue/vue-router/10-路由数据获取',
+        '/web/Vue/vue-router/11-路由动效',
+        '/web/Vue/vue-router/12-滚动行为',
+        '/web/Vue/vue-router/13-路由元信息',
+        '/web/Vue/vue-router/14-路由懒加载',
       ]
     },
   ],
@@ -151,6 +166,15 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/service/Docker/',
+      ]
+    },
+  ],
+  '/service/Mongodb/': [
+    {
+      text: 'Mongodb',
+      collapsible: true,
+      children: [
+        '/service/Mongodb/',
       ]
     },
   ],

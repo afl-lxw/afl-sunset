@@ -1,10 +1,12 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
-export const navbarZh: NavbarConfig  = [
+export const navbarZh: NavbarConfig = [
   { text: '首页', link: '/' },
-  { text: '前端',
+  {
+    text: '前端',
     children: [
-      { text: 'Web',
+      {
+        text: 'Web',
         children: [
           { text: 'Javascript', link: '/web/Javascript/' },
           { text: 'Typescript', link: '/web/Typescript/' },
@@ -14,25 +16,29 @@ export const navbarZh: NavbarConfig  = [
           { text: 'WebGL', link: '/web/WebGL/' },
           { text: 'THREE.js', link: '/web/Threejs/' },
           { text: 'React', link: '/web/React/' },
-        ]  
+        ]
       },
-      { text: '混合开发', 
-        children:[
+      {
+        text: '混合开发',
+        children: [
           { text: 'Flutter', link: '/Flutter/' },
-        ] 
+        ]
       },
     ]
   },
-  { text: 'service', 
+  {
+    text: 'service',
     children: [
       { text: "Nodejs", link: '/service/node/' },
       { text: "Golang", link: '/service/Go/' },
       { text: "Docker", link: '/service/Docker/' },
+      { text: "Mongodb", link: '/service/Mongodb/' }
     ]
   },
-  { text: '文档', 
+  {
+    text: '文档',
     children: [
-      { 
+      {
         text: "有点意思",
         children: [
           { text: "小技巧", link: '/docMD/Order/' },
