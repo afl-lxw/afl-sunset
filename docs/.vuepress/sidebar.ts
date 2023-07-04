@@ -194,6 +194,13 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/Animation/',
       ]
     },
+    {
+      text: 'GetX',
+      collapsible: true,
+      children: [
+        '/flutter/GetX/',
+      ]
+    },
   ],
   '/docMD/Git/': [
     {

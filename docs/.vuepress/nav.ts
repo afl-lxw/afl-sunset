@@ -21,7 +21,7 @@ export const navbarZh: NavbarConfig = [
       {
         text: '混合开发',
         children: [
-          { text: 'Flutter', link: '/Flutter/' },
+          { text: 'Flutter', link: '/flutter/' },
         ]
       },
     ]
