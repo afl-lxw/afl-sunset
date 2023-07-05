@@ -1,10 +1,6 @@
-# Utility Types
+# Partial
 
-# Partial—*将传入的 T 类型所有属性置为可选*
-
-### Partial
-
-*将传入的 T 类型所有属性置为可选*
+> *将传入的 T 类型所有属性置为可选*
 
 - 源码
 
@@ -123,6 +119,8 @@ type DogName = Dogs[DogNameKey]
 
 - 使用场景举例
 
+    1.对象的扩展运算符，比如我们实现基于 `useReducer` 实现一个简单的 `setState`
+
 ```tsx
 type State = {
   loading: boolean
@@ -162,41 +160,3 @@ function testFunction(params: Partial<Params>) {
   return requiredParams
 }
 ```
-
-[**Required—***让所有属性都变成必选的*](https://www.notion.so/Required-0849e41d64874507aec81ca5f3a7bb69?pvs=21)
-
-[**Readonly—***将所有属性变为只读*](https://www.notion.so/Readonly-3bd706b66a9b4c6bae6a48d04cb4720d?pvs=21)
-
-[Pick-*从 T 类型选择一组属性构造新的类型*](https://www.notion.so/Pick-T-5066ccbe19174019aaca04c723b0959d?pvs=21)
-
-[Record—*基于一个联合类型构造一个新类型，其属性键为 K，属性值为 T*](https://www.notion.so/Record-K-T-b038e85f4e554cf5ac0fd3c6d15e40c5?pvs=21)
-
-[Exclude—*从 T 的联合类型成员中排除可分配给类型 U 的所有联合成员来构造类型*](https://www.notion.so/Exclude-T-U-4af63a08512444a58fd2894a62700460?pvs=21)
-
-[**Extract—***从 T 的联合类型成员中提取可分配给类型 U 的所有联合成员来构造类型*](https://www.notion.so/Extract-T-U-750828840c264f5f9cc86d83045fd4ba?pvs=21)
-
-[Omit—*删除 T 类型中与 K 的所有联合类型成员有交集的键构造一个新类型*](https://www.notion.so/Omit-T-K-89969cd8e5ec4ca194b952eafdcb13d2?pvs=21)
-
-[NonNullable—*新类型不可为空*](https://www.notion.so/NonNullable-c8e130349e2a4b748a7ab87f935603be?pvs=21)
-
-[Parameters—*基于函数类型 T 的参数类型构造一个元组类型*](https://www.notion.so/Parameters-T-8670cf1229f44097a55bc8966e457cec?pvs=21)
-
-[ConstructorParameters—*从构造函数类型 T 的参数类型构造元组或数组类型（如果 T 不是函数，则为 never）*](https://www.notion.so/ConstructorParameters-T-T-never-cd0627df79504e458b8a24a0cc64ba4c?pvs=21)
-
-[ReturnType—*基于函数类型 T 的返回值类型构造一个新类型*](https://www.notion.so/ReturnType-T-ebcefbccc6094eeea7732be6447511a6?pvs=21)
-
-[InstanceType—*基于一个构造函数类型 T 的返回值构造一个新类型*](https://www.notion.so/InstanceType-T-4163f80964d548c5a40666f4d6f09e2b?pvs=21)
-
-[Uppercase—*将字符串的字面量类型转为大写*](https://www.notion.so/Uppercase-0b61dabc591342f4aa1e578ca22df1b6?pvs=21)
-
-[**Capitalize—***将字符串的字面量类型首字母转换为大写*](https://www.notion.so/Capitalize-0343c1fd96cf42faaf48ec580242e9a6?pvs=21)
-
-[Uncapitalize—*将字符串的字面量类型首字母转换为小写*](https://www.notion.so/Uncapitalize-93627039c7984cd898e37fe08acc42d6?pvs=21)
-
-[ThisType—*增强对象字面量类型中 this 的类型*](https://www.notion.so/ThisType-this-b2bed83840db472d90279b60297fed9b?pvs=21)
-
-[ThisParameterType—*提取函数声明的 this 类型*](https://www.notion.so/ThisParameterType-this-e0681cdd0fa046328319590d1aefc1b3?pvs=21)
-
-[OmitThisParameter—*基于一个函数类型构造一个没有 this 声明的函数类型*](https://www.notion.so/OmitThisParameter-this-340845bbbcdb424b956e550c3afe2f3b?pvs=21)
-
-[**非内置可自行实现的 Utility Types**](https://www.notion.so/Utility-Types-ed92150a4a904663a80e51b680dab4ce?pvs=21)

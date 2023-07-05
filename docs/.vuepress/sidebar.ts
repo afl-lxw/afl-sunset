@@ -58,8 +58,36 @@ export const sidebarZh: SidebarConfig = {
   "/web/Typescript/": [
 
     '/web/Typescript/范型.md',
-    '/web/Typescript/Utility-Types.md',
+    '/web/Typescript/infer.md',
+    '/web/Typescript/协变逆变.md',
 
+    {
+      text: 'Utility-Types',
+      collapsible: true,
+      children: [
+        '/web/Typescript/Utility-Types/Partial.md',
+        '/web/Typescript/Utility-Types/Record.md',
+        '/web/Typescript/Utility-Types/Exclude.md',
+        '/web/Typescript/Utility-Types/Omit.md',
+        '/web/Typescript/Utility-Types/Required.md',
+        '/web/Typescript/Utility-Types/Readonly.md',
+        '/web/Typescript/Utility-Types/Pick.md',
+        '/web/Typescript/Utility-Types/Capitalize.md',
+        '/web/Typescript/Utility-Types/ConstructorParameters.md',
+        '/web/Typescript/Utility-Types/Extract.md',
+        '/web/Typescript/Utility-Types/ThisType.md',
+        '/web/Typescript/Utility-Types/InstanceType.md',
+        '/web/Typescript/Utility-Types/NonNullable.md',
+        '/web/Typescript/Utility-Types/OmitThisParameter.md',
+        '/web/Typescript/Utility-Types/Parameters.md',
+        '/web/Typescript/Utility-Types/ReturnType.md',
+        '/web/Typescript/Utility-Types/ThisParameterType.md',
+        '/web/Typescript/Utility-Types/Uncapitalize.md',
+        '/web/Typescript/Utility-Types/Uppercase.md',
+        '/web/Typescript/Utility-Types/Utility Types.md',
+
+      ]
+    },
   ],
   "/web/Threejs/": [
     {
