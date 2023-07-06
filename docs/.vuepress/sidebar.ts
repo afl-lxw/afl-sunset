@@ -231,32 +231,16 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   '/docMD/Git/': [
-    {
-      text: 'Git',
-      collapsible: true,
-      children: [
-        '/docMD/Git/版本控制',
-        '/docMD/Git/分支新建与合并',
-      ]
-    },
+    '/docMD/Git/版本控制',
+    '/docMD/Git/分支新建与合并',
+
   ],
   '/docMD/Mac/': [
-    {
-      text: 'Mac',
-      collapsible: true,
-      children: [
-        '/docMD/Mac/菜单大小调整',
-        '/docMD/Mac/微信双开',
-      ]
-    },
+    '/docMD/Mac/菜单大小调整',
+    '/docMD/Mac/微信双开',
+
   ],
   '/docMD/Order/': [
-    {
-      text: 'Order',
-      collapsible: true,
-      children: [
-        '/docMD/Order/',
-      ]
-    },
+    '/docMD/Order/',
   ]
 }
