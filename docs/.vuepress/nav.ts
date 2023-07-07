@@ -31,8 +31,8 @@ export const navbarZh: NavbarConfig = [
     children: [
       { text: "Nodejs", link: '/service/node/' },
       { text: "Golang", link: '/service/go/' },
-      { text: "Docker", link: '/service/Docker/' },
-      { text: "Mongodb", link: '/service/Mongodb/' }
+      { text: "Docker", link: '/service/docker/' },
+      { text: "Mongodb", link: '/service/mongodb/' }
     ]
   },
   {
@@ -41,14 +41,14 @@ export const navbarZh: NavbarConfig = [
       {
         text: "有点意思",
         children: [
-          { text: "小技巧", link: '/docMD/Order/' },
+          { text: "小技巧", link: '/docMD/order/' },
         ]
       },
       {
         text: "其他",
         children: [
-          { text: "Mac", link: '/docMD/Mac/' },
-          { text: "Git", link: '/docMD/Git/' },
+          { text: "Mac", link: '/docMD/mac/' },
+          { text: "Git", link: '/docMD/git/' },
         ]
       }
     ]

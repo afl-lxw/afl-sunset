@@ -227,17 +227,17 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/docMD/Git/': [
-    '/docMD/Git/版本控制',
-    '/docMD/Git/分支新建与合并',
+  '/docMD/git/': [
+    '/docMD/git/版本控制',
+    '/docMD/git/分支新建与合并',
 
   ],
-  '/docMD/Mac/': [
-    '/docMD/Mac/菜单大小调整',
-    '/docMD/Mac/微信双开',
+  '/docMD/mac/': [
+    '/docMD/mac/菜单大小调整',
+    '/docMD/mac/微信双开',
 
   ],
-  '/docMD/Order/': [
-    '/docMD/Order/',
+  '/docMD/order/': [
+    '/docMD/order/',
   ]
 }
