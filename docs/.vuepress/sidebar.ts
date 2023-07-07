@@ -1,171 +1,169 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
-  '/web/Javascript/': [
-    '/web/Javascript/设计模式.md',
-    '/web/Javascript/JS高级.md',
-    '/web/Javascript/Zepto.md',
+  '/web/javascript/': [
+    '/web/javascript/设计模式.md',
+    '/web/javascript/JS高级.md',
+    '/web/javascript/Zepto.md',
     {
       text: 'Sass、Less',
       collapsible: true,
       children: [
-        '/web/Javascript/Less and Sass/Less and Sass.md',
-        '/web/Javascript/Less and Sass/1、相关介绍.md',
-        '/web/Javascript/Less and Sass/2、环境配置.md',
-        '/web/Javascript/Less and Sass/3、SassScript.md',
+        '/web/javascript/Less and Sass/Less and Sass.md',
+        '/web/javascript/Less and Sass/1、相关介绍.md',
+        '/web/javascript/Less and Sass/2、环境配置.md',
+        '/web/javascript/Less and Sass/3、SassScript.md',
       ]
     },
     {
       text: 'html5',
       collapsible: true,
       children: [
-        '/web/Javascript/HTML5/HTML5.md',
-        '/web/Javascript/HTML5/弹性盒子.md',
+        '/web/javascript/html5/HTML5.md',
+        '/web/javascript/html5/弹性盒子.md',
       ]
     },
     {
       text: '移动端',
       collapsible: true,
       children: [
-        '/web/Javascript/移动端/移动端.md',
+        '/web/javascript/移动端/移动端.md',
       ]
     },
     {
       text: 'ES6',
       collapsible: true,
       children: [
-        '/web/Javascript/ES6/01.ECMAScript 6 简介.md',
-        '/web/Javascript/ES6/02.let与const.md',
-        '/web/Javascript/ES6/03 解构赋值.md',
-        '/web/Javascript/ES6/04 字符串新特性.md',
-        '/web/Javascript/ES6/05 字符串新方法.md',
-        '/web/Javascript/ES6/06 数值新特性.md',
-        '/web/Javascript/ES6/07 ES5 数组变化.md',
-        '/web/Javascript/ES6/08 数组新特性.md',
-        '/web/Javascript/ES6/09 对象新特性.md',
-        '/web/Javascript/ES6/10 对象新方法.md',
-        '/web/Javascript/ES6/11 函数新方法.md',
-        '/web/Javascript/ES6/12 新增数据类型和数据结构.md',
-        '/web/Javascript/ES6/13 遍历器.md',
-        '/web/Javascript/ES6/14 生成器 Generator.md',
-        '/web/Javascript/ES6/15 Proxy.md',
-        '/web/Javascript/ES6/16 Peflect.md',
-        '/web/Javascript/ES6/17 Class 基本语法.md',
-        '/web/Javascript/ES6/18 Class 的继承.md',
+        '/web/javascript/eS6/01.ECMAScript 6 简介.md',
+        '/web/javascript/eS6/02.let与const.md',
+        '/web/javascript/eS6/03 解构赋值.md',
+        '/web/javascript/eS6/04 字符串新特性.md',
+        '/web/javascript/eS6/05 字符串新方法.md',
+        '/web/javascript/eS6/06 数值新特性.md',
+        '/web/javascript/eS6/07 ES5 数组变化.md',
+        '/web/javascript/eS6/08 数组新特性.md',
+        '/web/javascript/eS6/09 对象新特性.md',
+        '/web/javascript/eS6/10 对象新方法.md',
+        '/web/javascript/eS6/11 函数新方法.md',
+        '/web/javascript/eS6/12 新增数据类型和数据结构.md',
+        '/web/javascript/eS6/13 遍历器.md',
+        '/web/javascript/eS6/14 生成器 Generator.md',
+        '/web/javascript/eS6/15 Proxy.md',
+        '/web/javascript/eS6/16 Peflect.md',
+        '/web/javascript/eS6/17 Class 基本语法.md',
+        '/web/javascript/eS6/18 Class 的继承.md',
       ]
     },
   ],
-  "/web/Typescript/": [
-
-    '/web/Typescript/范型.md',
-    '/web/Typescript/infer.md',
-    '/web/Typescript/协变逆变.md',
-
+  "/web/typescript/": [
+    '/web/typescript/范型.md',
+    '/web/typescript/infer.md',
+    '/web/typescript/协变逆变.md',
     {
       text: 'Utility-Types',
       collapsible: true,
       children: [
-        '/web/Typescript/UtilityTypes/Partial.md',
-        '/web/Typescript/UtilityTypes/Record.md',
-        '/web/Typescript/UtilityTypes/Exclude.md',
-        '/web/Typescript/UtilityTypes/Omit.md',
-        '/web/Typescript/UtilityTypes/Required.md',
-        '/web/Typescript/UtilityTypes/Readonly.md',
-        '/web/Typescript/UtilityTypes/Pick.md',
-        '/web/Typescript/UtilityTypes/Capitalize.md',
-        '/web/Typescript/UtilityTypes/ConstructorParameters.md',
-        '/web/Typescript/UtilityTypes/Extract.md',
-        '/web/Typescript/UtilityTypes/ThisType.md',
-        '/web/Typescript/UtilityTypes/InstanceType.md',
-        '/web/Typescript/UtilityTypes/NonNullable.md',
-        '/web/Typescript/UtilityTypes/OmitThisParameter.md',
-        '/web/Typescript/UtilityTypes/Parameters.md',
-        '/web/Typescript/UtilityTypes/ReturnType.md',
-        '/web/Typescript/UtilityTypes/ThisParameterType.md',
-        '/web/Typescript/UtilityTypes/Uncapitalize.md',
-        '/web/Typescript/UtilityTypes/Uppercase.md',
-        '/web/Typescript/UtilityTypes/Utility Types.md',
+        '/web/typescript/UtilityTypes/Partial.md',
+        '/web/typescript/UtilityTypes/Record.md',
+        '/web/typescript/UtilityTypes/Exclude.md',
+        '/web/typescript/UtilityTypes/Omit.md',
+        '/web/typescript/UtilityTypes/Required.md',
+        '/web/typescript/UtilityTypes/Readonly.md',
+        '/web/typescript/UtilityTypes/Pick.md',
+        '/web/typescript/UtilityTypes/Capitalize.md',
+        '/web/typescript/UtilityTypes/ConstructorParameters.md',
+        '/web/typescript/UtilityTypes/Extract.md',
+        '/web/typescript/UtilityTypes/ThisType.md',
+        '/web/typescript/UtilityTypes/InstanceType.md',
+        '/web/typescript/UtilityTypes/NonNullable.md',
+        '/web/typescript/UtilityTypes/OmitThisParameter.md',
+        '/web/typescript/UtilityTypes/Parameters.md',
+        '/web/typescript/UtilityTypes/ReturnType.md',
+        '/web/typescript/UtilityTypes/ThisParameterType.md',
+        '/web/typescript/UtilityTypes/Uncapitalize.md',
+        '/web/typescript/UtilityTypes/Uppercase.md',
+        '/web/typescript/UtilityTypes/Utility Types.md',
       ]
     },
   ],
-  "/web/Threejs/": [
+  "/web/threejs/": [
     {
       text: 'THREE.js',
       collapsible: true,
       children: [
-        '/web/Threejs/',
+        '/web/threejs/',
       ]
     },
   ],
-  "/web/WebGL/": [
-    '/web/WebGL/',
-    '/web/WebGL/原理.md',
+  "/web/webGL/": [
+    '/web/webGL/',
+    '/web/webGL/原理.md',
     {
       text: 'Canvas',
       collapsible: true,
       children: [
-        '/web/WebGL/Canvas/canvas.md',
-        '/web/WebGL/Canvas/konva.md',
+        '/web/webGL/Canvas/canvas.md',
+        '/web/webGL/Canvas/konva.md',
       ]
     },
   ],
-  "/web/CICD/": [
+  "/web/cI-CD/": [
     {
       text: 'CICD',
       collapsible: true,
       children: [
-        '/web/CICD/',
+        '/web/cI-CD/',
       ]
     },
   ],
-  "/web/Vue/": [
-    "/web/Vue/vuex",
-    "/web/Vue/vue组件之间通信方式",
+  "/web/vue/": [
+    "/web/vue/vuex",
+    "/web/vue/vue组件之间通信方式",
     {
       text: 'vue-router',
       collapsible: true,
       children: [
-        '/web/Vue/vue-router/1-vue-router',
-        '/web/Vue/vue-router/2-异步请求',
-        '/web/Vue/vue-router/3-devTools',
-        '/web/Vue/vue-router/4-动态路由',
-        '/web/Vue/vue-router/5-queryString',
-        '/web/Vue/vue-router/6-路由守卫',
-        '/web/Vue/vue-router/7-嵌套路由',
-        '/web/Vue/vue-router/8-重定向与别名',
-        '/web/Vue/vue-router/9-路由组件传参',
-        '/web/Vue/vue-router/10-路由数据获取',
-        '/web/Vue/vue-router/11-路由动效',
-        '/web/Vue/vue-router/12-滚动行为',
-        '/web/Vue/vue-router/13-路由元信息',
-        '/web/Vue/vue-router/14-路由懒加载',
+        '/web/vue/vue-router/1-vue-router',
+        '/web/vue/vue-router/2-异步请求',
+        '/web/vue/vue-router/3-devTools',
+        '/web/vue/vue-router/4-动态路由',
+        '/web/vue/vue-router/5-queryString',
+        '/web/vue/vue-router/6-路由守卫',
+        '/web/vue/vue-router/7-嵌套路由',
+        '/web/vue/vue-router/8-重定向与别名',
+        '/web/vue/vue-router/9-路由组件传参',
+        '/web/vue/vue-router/10-路由数据获取',
+        '/web/vue/vue-router/11-路由动效',
+        '/web/vue/vue-router/12-滚动行为',
+        '/web/vue/vue-router/13-路由元信息',
+        '/web/vue/vue-router/14-路由懒加载',
       ]
     },
   ],
-  "/web/Webpack/": [
+  "/web/webpack/": [
     {
       text: 'Webpack',
       collapsible: true,
       children: [
-        '/web/Webpack/',
-        '/web/Webpack/构建流程',
-        '/web/Webpack/理解',
-        '/web/Webpack/提高构建速度',
-        '/web/Webpack/优化前端性能',
-        '/web/Webpack/Loader',
-        '/web/Webpack/Loader和Plugin',
-        '/web/Webpack/Plugin',
-        '/web/Webpack/webpack_proxy',
-        '/web/Webpack/webpack热更新',
+        '/web/webpack/',
+        '/web/webpack/构建流程',
+        '/web/webpack/理解',
+        '/web/webpack/提高构建速度',
+        '/web/webpack/优化前端性能',
+        '/web/webpack/Loader',
+        '/web/webpack/Loader和Plugin',
+        '/web/webpack/Plugin',
+        '/web/webpack/webpack_proxy',
+        '/web/webpack/webpack热更新',
       ]
     },
   ],
-  "/web/React/": [
+  "/web/react/": [
     {
       text: 'React',
       collapsible: true,
       children: [
-        '/web/React/',
+        '/web/react/',
       ]
     },
   ],
@@ -178,30 +176,30 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
-  '/service/Go/': [
+  '/service/go/': [
     {
       text: 'Golang',
       collapsible: true,
       children: [
-        '/service/Go/',
+        '/service/go/',
       ]
     },
   ],
-  '/service/Docker/': [
+  '/service/docker/': [
     {
-      text: 'Golang',
+      text: 'Docker',
       collapsible: true,
       children: [
-        '/service/Docker/',
+        '/service/docker/',
       ]
     },
   ],
-  '/service/Mongodb/': [
+  '/service/mongodb/': [
     {
       text: 'Mongodb',
       collapsible: true,
       children: [
-        '/service/Mongodb/',
+        '/service/mongodb/',
       ]
     },
   ],

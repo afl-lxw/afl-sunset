@@ -8,14 +8,14 @@ export const navbarZh: NavbarConfig = [
       {
         text: 'Web',
         children: [
-          { text: 'Javascript', link: '/web/Javascript/' },
-          { text: 'Typescript', link: '/web/Typescript/' },
-          { text: 'Vue', link: '/web/Vue/' },
-          { text: 'Webpack', link: '/web/Webpack/' },
-          { text: 'CICD', link: '/web/CICD/' },
-          { text: 'WebGL', link: '/web/WebGL/' },
-          { text: 'THREE.js', link: '/web/Threejs/' },
-          { text: 'React', link: '/web/React/' },
+          { text: 'Javascript', link: '/web/javascript/' },
+          { text: 'Typescript', link: '/web/typescript/' },
+          { text: 'Vue', link: '/web/vue/' },
+          { text: 'Webpack', link: '/web/webpack/' },
+          { text: 'CICD', link: '/web/cI-CD/' },
+          { text: 'WebGL', link: '/web/webGL/' },
+          { text: 'THREE.js', link: '/web/threejs/' },
+          { text: 'React', link: '/web/react/' },
         ]
       },
       {
@@ -30,7 +30,7 @@ export const navbarZh: NavbarConfig = [
     text: 'service',
     children: [
       { text: "Nodejs", link: '/service/node/' },
-      { text: "Golang", link: '/service/Go/' },
+      { text: "Golang", link: '/service/go/' },
       { text: "Docker", link: '/service/Docker/' },
       { text: "Mongodb", link: '/service/Mongodb/' }
     ]
