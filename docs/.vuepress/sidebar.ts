@@ -56,6 +56,7 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   "/web/typescript/": [
+    '/web/typescript/基本数据类型.md',
     '/web/typescript/范型.md',
     '/web/typescript/infer.md',
     '/web/typescript/协变逆变.md',
