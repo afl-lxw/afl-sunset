@@ -93,8 +93,16 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/web/threejs/',
+
       ]
     },
+    {
+      text: 'react-three-fiber',
+      collapsible: true,
+      children: [
+        '/web/threejs/react-three-fiber/index.md',
+      ]
+    }
   ],
   "/web/webGL/": [
     '/web/webGL/',
