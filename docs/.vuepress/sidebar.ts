@@ -88,14 +88,13 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   "/web/threejs/": [
-    {
-      text: 'THREE.js',
-      collapsible: true,
-      children: [
-        '/web/threejs/',
-
-      ]
-    },
+    '/web/threejs/',
+    // {
+    //   text: 'THREE.js',
+    //   collapsible: true,
+    //   children: [
+    //   ]
+    // },
     {
       text: 'react-three-fiber',
       collapsible: true,
@@ -204,13 +203,14 @@ export const sidebarZh: SidebarConfig = {
     },
   ],
   '/service/mongodb/': [
-    {
-      text: 'Mongodb',
-      collapsible: true,
-      children: [
-        '/service/mongodb/',
-      ]
-    },
+    '/service/mongodb/',
+    // {
+    //   text: 'Mongodb',
+    //   collapsible: true,
+    //   children: [
+    //     '/service/mongodb/',
+    //   ]
+    // },
   ],
   '/flutter/': [
     {
