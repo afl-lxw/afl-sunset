@@ -206,3 +206,36 @@ Three.js中的Geometry是用于描述3D对象的几何形状的类。它具有�
 - 在不需要使用的网格时，使用`dispose`方法释放其占用的内存，以优化性能。
 
 通过使用`Mesh`，您可以将几何体和材质组合在一起，创建具有特定形状和外观的3D对象，并通过设置属性和调用方法来控制网格的行为和效果。
+
+### 案例
+
+下面拿官网的案例来展现一下
+
+```javascript
+import * as THREE from 'three';
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 5;
+
+function animate() {
+ requestAnimationFrame( animate );
+
+ cube.rotation.x += 0.01;
+ cube.rotation.y += 0.01;
+
+ renderer.render( scene, camera );
+}
+
+animate();
+```
