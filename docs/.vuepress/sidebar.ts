@@ -239,7 +239,7 @@ export const sidebarZh: SidebarConfig = {
   '/docMD/git/': [
     '/docMD/git/版本控制',
     '/docMD/git/分支新建与合并',
-    '/docMD/git/版本控制',
+    '/docMD/git/提交规范',
   ],
   '/docMD/mac/': [
     '/docMD/mac/菜单大小调整',
