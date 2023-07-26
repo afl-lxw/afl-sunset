@@ -101,6 +101,13 @@ export const sidebarZh: SidebarConfig = {
       children: [
         '/web/threejs/react-three-fiber/index.md',
       ]
+    },
+    {
+      text: 'react-three-deri',
+      collapsible: true,
+      children: [
+        '/web/threejs/react-three-deri/index.md',
+      ]
     }
   ],
   "/web/webGL/": [
