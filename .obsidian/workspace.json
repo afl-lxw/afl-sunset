@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "eb5b538288ba9581",
+    "id": "ac353eb99d8ed81b",
     "type": "split",
     "children": [
       {
-        "id": "00838dc6c0a8d58e",
+        "id": "c5ceab7832e19aa3",
         "type": "tabs",
         "children": [
           {
-            "id": "621bf9364861e4f3",
+            "id": "11d1b04a3b5af612",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/web/threejs/three.JS库.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e39af63f06dcdd1c",
+    "id": "4cc1b46e507ed33a",
     "type": "split",
     "children": [
       {
-        "id": "9b433e03b6cd8a22",
+        "id": "739013a0e5c9e4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "9a8a827f6163e89b",
+            "id": "1867a7d3890a4aa7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +43,7 @@
             }
           },
           {
-            "id": "953bc750f8e3bb92",
+            "id": "de8d2abf155e635b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,7 +58,7 @@
             }
           },
           {
-            "id": "2d9964961b7bf37f",
+            "id": "6a89bcce7c1f7e93",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -65,22 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 300
   },
   "right": {
-    "id": "7ae5ce964fe54147",
+    "id": "2c2edd82762cf9c3",
     "type": "split",
     "children": [
       {
-        "id": "278fb11a49663d43",
+        "id": "07d2e2083a08273c",
         "type": "tabs",
         "children": [
           {
-            "id": "2c5a0d34c85f5359",
+            "id": "be2768cba39cea13",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/web/threejs/three.JS库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +97,19 @@
             }
           },
           {
-            "id": "3c4f9c232525b683",
+            "id": "999348a201b6b1de",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/web/threejs/three.JS库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e9d74dbcf4677bec",
+            "id": "5f1df4249c9703d4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,11 +120,13 @@
             }
           },
           {
-            "id": "24abf277aeedc7f6",
+            "id": "403b888a9f100215",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/web/threejs/three.JS库.md"
+              }
             }
           }
         ]
@@ -138,16 +146,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9a8a827f6163e89b",
-  "lastOpenFiles": [
-    "未命名.canvas",
-    "web/threejs/index.md",
-    "未命名.md",
-    "README.md",
-    "web/threejs/three.JS库.md",
-    "web/threejs/react-three-fiber/index.md",
-    "web/threejs/react-three-deri/index.md",
-    "flutter/widget/组件导航.md",
-    "flutter/index.md"
-  ]
+  "active": "11d1b04a3b5af612",
+  "lastOpenFiles": []
 }

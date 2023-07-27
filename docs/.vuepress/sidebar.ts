@@ -89,12 +89,8 @@ export const sidebarZh: SidebarConfig = {
   ],
   "/web/threejs/": [
     '/web/threejs/',
-    // {
-    //   text: 'THREE.js',
-    //   collapsible: true,
-    //   children: [
-    //   ]
-    // },
+    '/web/threejs/three.JS库',
+
     {
       text: 'react-three-fiber',
       collapsible: true,
