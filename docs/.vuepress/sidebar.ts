@@ -96,6 +96,10 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/web/threejs/react-three-fiber/index.md',
+        '/web/threejs/react-three-fiber/use.md',
+        '/web/threejs/react-three-fiber/canvas.md',
+        '/web/threejs/react-three-fiber/对象、属性和构造函数参数.md',
+
       ]
     },
     {
