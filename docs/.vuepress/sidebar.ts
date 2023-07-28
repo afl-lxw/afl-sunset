@@ -100,6 +100,7 @@ export const sidebarZh: SidebarConfig = {
         '/web/threejs/react-three-fiber/canvas.md',
         '/web/threejs/react-three-fiber/对象、属性和构造函数参数.md',
         '/web/threejs/react-three-fiber/hooks.md',
+        '/web/threejs/react-three-fiber/event.md',
 
       ]
     },

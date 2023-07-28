@@ -163,3 +163,154 @@ useFrame(({ size, viewport }) => {
 ```
 
 使用这些属性，您可以根据渲染的尺寸和视口尺寸，实现响应式的场景更新，使您的 Three.js 应用适应不同的屏幕大小和设备。
+
+#### 渲染排序
+
+可以使用负指数（负帧数）来实现在组件渲染循环中进行更新的指定顺序。
+R3F 中的 useFrame 钩子会在每一帧渲染时调用注册的回调函数。回调函数的执行顺序由其添加到组件的顺序决定，而负指数（负帧数）允许您通过调整回调函数的注册顺序来控制它们在渲染循环中的执行顺序。
+
+例如，如果您有多个回调函数，并且希望某个回调函数在其他回调函数之前执行，可以为该回调函数使用较大的负指数。
+
+使用方法：
+
+```jsx
+import { useFrame } from 'react-three-fiber';
+const MyComponent = () => {
+  useFrame(() => {
+    // 在这里编写第一个回调函数的更新逻辑
+    // ...
+  });
+  useFrame(() => {
+    // 在这里编写第二个回调函数的更新逻辑
+    // ...
+  }, -1); // 使用负指数 -1 来确保第二个回调函数先于第一个回调函数执行
+  return null;
+};
+```
+
+在上面的示例中，我们使用了两个 useFrame 钩子，并在第二个钩子中传递了 -1 作为第二个参数。这将确保第二个回调函数在第一个回调函数之前执行。
+请注意，负指数（负帧数）的数值越小，优先级越高。即使两个回调函数都使用了负指数，数值较小的回调函数会先于数值较大的回调函数执行。
+使用负指数排序的 useFrame 钩子允许您更好地控制在组件的渲染循环中的更新顺序，以满足复杂场景下的特定需求。但请谨慎使用，确保您对回调函数之间的执行顺序有清晰的理解和设计。不恰当的回调顺序可能导致不稳定的行为或性能问题。
+
+## useLoader
+
+useLoader 是一个自定义钩子（Hook），它用于加载外部资源，例如模型、纹理、字体等，并在加载完成后将其应用于 Three.js 场景中的组件。useLoader 钩子简化了加载和使用外部资源的过程，使得在 R3F 中添加各种资源变得更加容易。
+
+### 使用方法
+
+在使用 useLoader 钩子时，您需要提供加载器（Loader）的类型以及所需资源的路径。加载器是用于加载资源的 Three.js 对象，根据需要加载模型、纹理、字体等资源，不同的资源类型需要使用不同的加载器。
+
+```jsx
+import { Suspense } from 'react'
+import { useLoader } from '@react-three/fiber'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+function Model() {
+  const result = useLoader(GLTFLoader, '/model.glb')
+  // You don't need to check for the presence of the result, when we're here
+  // the result is guaranteed to be present since useLoader suspends the component
+  return <primitive object={result.scene} />
+}
+
+function App() {
+  return (
+    <Suspense fallback={<FallbackComponent /> /* or null */}>
+      <Model />
+    </Suspense>
+  )
+}
+```
+
+#### Loader extensions
+
+如果您需要配置加载程序，您可以提供回调作为第三个参数：
+
+```jsx
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
+
+useLoader(GLTFLoader, url, (loader) => {
+  const dracoLoader = new DRACOLoader()
+  dracoLoader.setDecoderPath('/draco-gltf/')
+  loader.setDRACOLoader(dracoLoader)
+})
+```
+
+#### 一次加载多个资源
+
+```jsx
+const [bumpMap, specMap, normalMap] = useLoader(TextureLoader, [url1, url2, url2])
+```
+
+> 默认情况下，使用 useLoader 加载的资源会被缓存。给定的 url 用作缓存键。这允许您在组件树中的任何位置重用加载的数据。
+> 更改或处置加载的资产时要非常小心，尤其是当您计划重新使用它们时。请参阅 API 中的自动处置部分。
+
+#### 加载状态
+
+您可以从作为第四个参数提供的回调中获取加载状态。尽管考虑像 THREE.DefaultLoadingManager 或更好的替代品，Drei 的加载助手。
+
+```jsx
+useLoader(loader, url, extensions, (xhr) => {
+  console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+})
+```
+
+#### GLTFLoader
+
+如果result.scene找到道具，钩子将自动创建一个对象和材质集合：{ nodes, materials }。这使您可以有选择地构建不可变的场景图。您还可以专门更改数据，而无需遍历它。GLTFJSX特别依赖于该数据。
+
+```jsx
+const { nodes, material } = useLoader(GLTFLoader, url)
+```
+
+#### 预加载资产
+
+您可以在全局空间中预加载资源，以便在将模型安装到组件树中之前可以预先加载模型。
+
+```jsx
+useLoader.preload(GLTFLoader, '/model.glb' /*extensions*/)
+```
+
+### 注意事项
+
+useLoader 钩子应该在 R3F 组件的函数体内部使用，不要在组件的顶层使用或在其他钩子的依赖数组中使用，这可能会导致无法正确加载资源。
+加载资源是异步操作，因此确保在加载完成前不要尝试在组件中使用资源。
+当组件被卸载时，useLoader 钩子会自动取消未完成的加载操作，并清理相应的资源。
+
+回调函数的属性：
+在 useLoader 钩子的回调函数中，可以使用第一个参数来访问加载完成的资源。回调函数将在资源加载完成后被调用，并将加载结果作为参数传递给回调函数。
+
+```jsx
+const texture = useLoader(TextureLoader, '/path/to/texture.png', (texture) => {
+  // 在这里可以使用加载完成的 texture 资源
+  // ...
+});
+```
+
+除了加载的资源外，回调函数还可以接收其他参数，如加载的进度和错误信息。
+
+```jsx
+const texture = useLoader(TextureLoader, '/path/to/texture.png', (texture) => {
+  // 在这里可以使用加载完成的 texture 资源
+  // ...
+}, (progressEvent) => {
+  // 加载进度信息
+  const progress = progressEvent.loaded / progressEvent.total;
+}, (error) => {
+  // 加载错误信息
+  console.error('Error loading texture:', error);
+});
+```
+
+通过使用回调函数的参数，您可以在加载资源时获取加载进度和错误信息，以便在加载过程中显示进度条或处理加载错误。这使得在 R3F 中加载外部资源更加灵活和可控。
+
+## useGraph
+
+```jsx
+import { useLoader, useGraph } from '@react-three/fiber'
+
+function Model(url) {
+  const scene = useLoader(OBJLoader, url)
+  const { nodes, materials } = useGraph(scene)
+  return <mesh geometry={nodes.robot.geometry} material={materials.metal} />
+}
+```
