@@ -16,6 +16,7 @@ const App = () => (
 ```
 
 ## 属性
+
 下面是以表格形式输出的 `Canvas` 组件的属性参数、作用和例子：
 
 |属性名|作用|例子|
@@ -61,10 +62,9 @@ Canvas 使用[createRoot](https://docs.pmnd.rs/react-three-fiber/api/canvas#crea
 
 它还将创建以下场景内部：
 
--  `THREE.Perspective` camera
--  `THREE.Orthographic` cam if `orthographic` is true
--  `THREE.PCFSoftShadowMap` if `shadows` is true
--  `THREE.Scene` (into which all the JSX is rendered) and a `THREE.Raycaster`
+- `THREE.Perspective` camera
+- `THREE.Orthographic` cam if `orthographic` is true
+- `THREE.PCFSoftShadowMap` if `shadows` is true
+- `THREE.Scene` (into which all the JSX is rendered) and a `THREE.Raycaster`
 
 以上就是创建完之后附带的默认值项
-
