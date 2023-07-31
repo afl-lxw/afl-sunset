@@ -233,6 +233,13 @@ export const sidebarZh: SidebarConfig = {
       children: [
         '/flutter/widget/',
         '/flutter/widget/组件导航.md',
+        {
+          text: '基础组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/基础组件/Container.md',
+          ]
+        }
       ]
     },
     {
