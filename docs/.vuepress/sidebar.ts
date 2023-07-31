@@ -102,6 +102,8 @@ export const sidebarZh: SidebarConfig = {
         '/web/threejs/react-three-fiber/hooks.md',
         '/web/threejs/react-three-fiber/event.md',
         '/web/threejs/react-three-fiber/Additional-Exports.md',
+        '/web/threejs/react-three-fiber/扩展性能.md',
+        '/web/threejs/react-three-fiber/性能陷阱.md',
 
       ]
     },
