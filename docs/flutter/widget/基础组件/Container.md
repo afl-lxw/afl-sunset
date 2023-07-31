@@ -26,14 +26,15 @@ Container是Flutter中一个常用的布局小部件，它用于创建一个可�
 - alignment（AlignmentGeometry）：控制子小部件在Container中的对齐方式。默认为Alignment.center，表示居中对齐。
 - padding（EdgeInsetsGeometry）：设置Container内部内容的内边距，即子小部件与Container边缘的间距。
 - color（Color）：设置Container的背景颜色。
-- width（double）：设置Container的宽度。
-- height（double）：设置Container的高度。
 - decoration（Decoration）：设置Container的装饰效果，如背景图片、边框、圆角等。通过BoxDecoration来实现。
 - foregroundDecoration（Decoration）：设置Container前景装饰效果，类似于decoration，但会覆盖在子小部件上。
+- width（double）：设置Container的宽度。
+- height（double）：设置Container的高度。
+- margin（EdgeInsetsGeometry）：设置Container与其父小部件之间的间距。
 - transform（Matrix4）：对Container进行矩阵变换，如旋转、缩放、平移等。
 - constraints（BoxConstraints）：设置Container的约束条件，如最大最小宽度、最大最小高度。
-- margin（EdgeInsetsGeometry）：设置Container与其父小部件之间的间距。
 - clipBehavior（Clip）：控制子小部件是否裁剪到Container的边界。
+- BoxConstraints({double minWidth = 0.0, double maxWidth = double.infinity, double minHeight = 0.0, double maxHeight = double.infinity})：用于设置Container的最大最小宽高。
 
 下面是一个示例代码，演示了Container的用法和部分属性：
 

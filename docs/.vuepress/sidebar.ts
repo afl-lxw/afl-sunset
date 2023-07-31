@@ -238,6 +238,10 @@ export const sidebarZh: SidebarConfig = {
           collapsible: true,
           children: [
             '/flutter/widget/基础组件/Container.md',
+            '/flutter/widget/基础组件/Scaffold、Appbar.md',
+            '/flutter/widget/基础组件/Row、Column.md',
+            '/flutter/widget/基础组件/Image、Text、Icon.md',
+
           ]
         }
       ]
