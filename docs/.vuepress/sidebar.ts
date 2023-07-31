@@ -104,7 +104,9 @@ export const sidebarZh: SidebarConfig = {
         '/web/threejs/react-three-fiber/Additional-Exports.md',
         '/web/threejs/react-three-fiber/扩展性能.md',
         '/web/threejs/react-three-fiber/性能陷阱.md',
-
+        '/web/threejs/react-three-fiber/加载模型.md',
+        '/web/threejs/react-three-fiber/加载纹理.md',
+        // '/web/threejs/react-three-fiber/基本动画.md',
       ]
     },
     {
