@@ -240,8 +240,25 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/基础组件/Container.md',
             '/flutter/widget/基础组件/Scaffold、Appbar.md',
             '/flutter/widget/基础组件/Row、Column.md',
-            '/flutter/widget/基础组件/Image、Text、Icon.md',
-
+            '/flutter/widget/基础组件/Image、Icon.md',
+            '/flutter/widget/基础组件/Text.md',
+          ]
+        },
+        {
+          text: '滚动组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/滚动组件/ListView.md',
+            '/flutter/widget/滚动组件/GridView.md',
+            '/flutter/widget/滚动组件/SingleChildScrollView.md',
+            '/flutter/widget/滚动组件/CustomScrollView.md',
+            '/flutter/widget/滚动组件/NestedScrollView.md',
+            '/flutter/widget/滚动组件/PageView.md',
+            '/flutter/widget/滚动组件/RefreshIndicator.md',
+            '/flutter/widget/滚动组件/Scrollable.md',
+            '/flutter/widget/滚动组件/NotificationListener.md',
+            '/flutter/widget/滚动组件/Scrollbar.md',
+            '/flutter/widget/滚动组件/ScrollConfiguration.md',
           ]
         }
       ]
