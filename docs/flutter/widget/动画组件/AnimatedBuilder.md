@@ -1,4 +1,4 @@
-# AnimatedBuilder
+# AnimatedBuilder(动画构建器)
 
 AnimatedBuilder 是 Flutter 中的一个小部件，它用于通过传递给它的动画来构建小部件树。它允许您将动画的值映射到部件属性，只有在动画值发生变化时才会重建，从而避免不必要的重建。以下是关于 AnimatedBuilder 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

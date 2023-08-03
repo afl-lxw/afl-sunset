@@ -285,7 +285,6 @@ export const sidebarZh: SidebarConfig = {
           collapsible: true,
           children: [
             '/flutter/widget/动画组件/index.md',
-            '/flutter/widget/动画组件/AnimatedContainer.md',
             '/flutter/widget/动画组件/AlignTransition.md',
             '/flutter/widget/动画组件/AnimatedBuilder.md',
             '/flutter/widget/动画组件/AnimatedCrossFade.md',
@@ -300,8 +299,6 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/动画组件/AnimatedWidget.md',
             '/flutter/widget/动画组件/AnimatedTheme.md',
             '/flutter/widget/动画组件/DecoratedBoxTransition.md',
-            '/flutter/widget/动画组件/CupertinoPageRoute.md',
-            '/flutter/widget/动画组件/CurvedAnimation.md',
             '/flutter/widget/动画组件/FadeTransition.md',
             '/flutter/widget/动画组件/Hero.md',
             '/flutter/widget/动画组件/PositionedTransition.md',
@@ -316,12 +313,15 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
     {
-      text: 'Animation',
+      text: 'Animation类',
       collapsible: true,
       children: [
         '/flutter/Animation/',
         '/flutter/Animation/Tween.md',
         '/flutter/Animation/AnimatedWidgetBaseState.md',
+        '/flutter/Animation/AnimatedContainer.md',
+        '/flutter/Animation/CupertinoPageRoute.md',
+        '/flutter/Animation/CurvedAnimation.md',
 
       ]
     },

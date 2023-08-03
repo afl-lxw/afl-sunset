@@ -1,4 +1,4 @@
-# AnimationController
+# AnimationController()
 
 AnimationController 是 Flutter 中用于控制动画的一个重要类。它用于创建和管理动画的控制器，可以控制动画的持续时间、速度、反向等。以下是关于 AnimationController 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

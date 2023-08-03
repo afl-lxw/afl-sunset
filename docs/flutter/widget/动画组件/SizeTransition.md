@@ -1,4 +1,4 @@
-# SizeTransition
+# SizeTransition(大小变化组件)
 
 SizeTransition 是 Flutter 中用于实现大小变化动画的一个组件。它可以在一个子部件上应用大小变化动画，并根据提供的动画进行大小变化。
 

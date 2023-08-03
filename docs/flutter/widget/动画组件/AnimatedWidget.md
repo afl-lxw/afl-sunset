@@ -1,4 +1,4 @@
-# AnimatedWidget
+# AnimatedWidget(动画组件)
 
 AnimatedWidget 是一个抽象类，用于简化在动画过程中更新部件的过程。它允许您封装动画逻辑，并将部件更新与动画同步。以下是关于 AnimatedWidget 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

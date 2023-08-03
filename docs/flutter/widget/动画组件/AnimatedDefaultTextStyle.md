@@ -1,4 +1,4 @@
-# AnimatedDefaultTextStyle
+# AnimatedDefaultTextStyle(动画文本样式)
 
 AnimatedDefaultTextStyle 是 Flutter 中的一个小部件，用于在不同的文本样式之间创建平滑的过渡动画。它可以让文本的样式（如字体大小、颜色、字体粗细等）在改变时具有动画效果，从而使 UI 变化更加平滑和吸引人。
 

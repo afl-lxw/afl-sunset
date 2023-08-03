@@ -1,4 +1,4 @@
-# AnimatedPositioned
+# AnimatedPositioned(动画定位)
 
 AnimatedPositioned 是 Flutter 中的一个小部件，用于在不同位置之间平滑地过渡部件的位置。它允许您在不同位置之间创建动画过渡，从而实现部件的平移效果。以下是关于 AnimatedPositioned 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

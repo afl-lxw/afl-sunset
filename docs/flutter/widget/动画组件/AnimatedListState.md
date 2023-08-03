@@ -1,4 +1,4 @@
-# AnimatedListState
+# AnimatedListState(动画列表状态)
 
 AnimatedListState 并不是一个小部件，而是一个状态对象，它管理了 AnimatedList 小部件中的数据和操作。通过 AnimatedListState，您可以对列表项进行添加、删除、移动等操作，并且在这些操作时产生平滑的过渡动画效果。
 

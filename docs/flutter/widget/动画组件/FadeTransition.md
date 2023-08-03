@@ -1,4 +1,4 @@
-# FadeTransition
+# FadeTransition(淡入淡出动画组件)
 
 FadeTransition 是 Flutter 中的一个动画过渡组件，用于在两个不透明度之间应用动画过渡效果。它可以在不同的不透明度之间实现淡入淡出的动画效果。以下是关于 FadeTransition 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

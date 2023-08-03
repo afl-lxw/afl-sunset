@@ -1,4 +1,4 @@
-# PositionedTransition
+# PositionedTransition(位置过渡)
 
 PositionedTransition 是 Flutter 中的一个动画组件，用于在两个不同的位置之间进行动画过渡。它可以在两种不同的位置状态之间平滑地过渡，创建动态的位置变化效果。
 

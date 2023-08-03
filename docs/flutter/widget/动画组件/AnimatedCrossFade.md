@@ -1,4 +1,4 @@
-# AnimatedCrossFade
+# AnimatedCrossFade(淡入淡出过渡)
 
 AnimatedCrossFade 是 Flutter 中的一个小部件，用于在两个不同的状态之间进行平滑的过渡。它允许您在两个子部件之间进行淡入淡出的过渡效果，根据布尔值的变化来控制显示哪个子部件。以下是关于 AnimatedCrossFade 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

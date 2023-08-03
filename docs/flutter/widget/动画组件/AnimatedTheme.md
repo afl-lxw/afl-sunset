@@ -1,4 +1,4 @@
-# AnimatedTheme
+# AnimatedTheme(动画主题)
 
 AnimatedTheme 是一个小部件，用于在更改主题时添加动画过渡。它可以在应用主题属性发生变化时，通过添加动画来平滑地过渡到新的主题状态。
 

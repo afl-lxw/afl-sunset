@@ -1,4 +1,4 @@
-# AnimatedContainer
+# AnimatedContainer(动画容器)
 
 AnimatedContainer 是 Flutter 中的一个小部件，用于在动画过渡期间平滑地更改其容器属性，如颜色、大小、边框等。它可以使容器属性的过渡变得平滑且具有动画效果。以下是关于 AnimatedContainer 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

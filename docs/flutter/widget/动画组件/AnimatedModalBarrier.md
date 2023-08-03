@@ -1,4 +1,4 @@
-# AnimatedModalBarrier
+# AnimatedModalBarrier(动画遮罩层)
 
 AnimatedModalBarrier 并不是一个常用的小部件，通常作为其他动画或过渡效果的一部分。它是一个半透明的遮罩层，可以用来阻止用户与界面的其他部分进行交互，从而集中用户的注意力在某个特定的动画或界面元素上。
 

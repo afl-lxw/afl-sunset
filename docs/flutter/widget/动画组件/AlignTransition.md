@@ -1,4 +1,4 @@
-# AlignTransition
+# AlignTransition(对齐过渡)
 
 AlignTransition 是 Flutter 中用于在过渡期间根据动画值调整部件的对齐方式的小部件。它可以在子部件的不同对齐方式之间创建平滑的过渡效果。以下是关于 AlignTransition 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

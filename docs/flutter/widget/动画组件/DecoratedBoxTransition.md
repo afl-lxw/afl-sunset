@@ -1,4 +1,4 @@
-# DecoratedBoxTransition
+# DecoratedBoxTransition(装饰盒过渡组件)
 
 DecoratedBoxTransition 是 Flutter 中的一个动画过渡组件，用于在两个装饰盒之间应用动画过渡效果。它可以在不同的装饰盒之间应用动画，例如改变颜色、边框、阴影等装饰效果。以下是关于 DecoratedBoxTransition 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 

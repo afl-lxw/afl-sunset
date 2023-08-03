@@ -1,4 +1,4 @@
-# AnimatedOpacity
+# AnimatedOpacity(透明度动画)
 
 AnimatedOpacity 是 Flutter 中的一个小部件，用于在透明度变化时平滑地过渡部件的可见性。它允许您在不同透明度之间创建动画过渡，从而实现淡入淡出的效果。以下是关于 AnimatedOpacity 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
 
