@@ -242,6 +242,10 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/基础组件/Row、Column.md',
             '/flutter/widget/基础组件/Image、Icon.md',
             '/flutter/widget/基础组件/Text.md',
+            '/flutter/widget/基础组件/TextField.md',
+            '/flutter/widget/基础组件/Form.md',
+            '/flutter/widget/基础组件/Switch、Checkbox.md',
+
           ]
         },
         {
@@ -259,6 +263,52 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/滚动组件/NotificationListener.md',
             '/flutter/widget/滚动组件/Scrollbar.md',
             '/flutter/widget/滚动组件/ScrollConfiguration.md',
+            '/flutter/widget/滚动组件/AnimatedList.md',
+
+          ]
+        },
+        {
+          text: '按钮组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/按钮组件/ButtonBar.md',
+            '/flutter/widget/按钮组件/DropdownButton.md',
+            '/flutter/widget/按钮组件/FlatButton.md',
+            '/flutter/widget/按钮组件/FloatingActionButton.md',
+            '/flutter/widget/按钮组件/IconButton.md',
+            '/flutter/widget/按钮组件/PopupMenuButton.md',
+            '/flutter/widget/按钮组件/RaisedButton.md',
+          ]
+        },
+        {
+          text: '动画组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/动画组件/index.md',
+            '/flutter/widget/动画组件/AnimatedContainer.md',
+            '/flutter/widget/动画组件/AlignTransition.md',
+            '/flutter/widget/动画组件/AnimatedBuilder.md',
+            '/flutter/widget/动画组件/AnimatedAlign.md',
+            '/flutter/widget/动画组件/AnimatedCrossFade.md',
+            '/flutter/widget/动画组件/AnimatedDefaultTextStyle.md',
+            '/flutter/widget/动画组件/AnimatedListState.md',
+            '/flutter/widget/动画组件/AnimatedModalBarrier.md',
+            '/flutter/widget/动画组件/AnimatedOpacity.md',
+            '/flutter/widget/动画组件/AnimatedPhysicalModel.md',
+            '/flutter/widget/动画组件/AnimatedPositioned.md',
+            '/flutter/widget/动画组件/AnimatedSize.md',
+            '/flutter/widget/动画组件/AnimatedSwitcher.md',
+            '/flutter/widget/动画组件/AnimatedWidget.md',
+            '/flutter/widget/动画组件/AnimatedTheme.md',
+            '/flutter/widget/动画组件/AnimatedWidgetBaseState.md',
+            '/flutter/widget/动画组件/DecoratedBoxTransition.md',
+            '/flutter/widget/动画组件/FadeTransition.md',
+            '/flutter/widget/动画组件/Hero.md',
+            '/flutter/widget/动画组件/PositionedTransition.md',
+            '/flutter/widget/动画组件/RotationTransition.md',
+            '/flutter/widget/动画组件/ScaleTransition.md',
+            '/flutter/widget/动画组件/SizeTransition.md',
+            '/flutter/widget/动画组件/SlideTransition.md',
           ]
         }
       ]
