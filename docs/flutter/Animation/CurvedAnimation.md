@@ -14,7 +14,7 @@ CurvedAnimation 是 Flutter 中用于创建动画过渡曲线的类，它可以�
 
 CurvedAnimation 的主要属性及其功能：
 
-- parent：父级动画，通常是一个 Animation<double>。
+- parent：父级动画，通常是一个 `Animation<double>`。
 - curve：指定的动画曲线，可以是预定义的 Curve 类，也可以是自定义的 Curve。
 
 ## 用法

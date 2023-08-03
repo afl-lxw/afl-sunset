@@ -14,7 +14,7 @@ SlideTransition 是 Flutter 中用于实现滑动动画的一个组件。它可�
 
 ## 属性和功能
 
-- position: 一个 Animation<Offset> 类型的属性，表示滑动的位置。Offset 是一个表示平面上的点的类，position 的动画会将子部件从一个 Offset 平移到另一个 Offset。
+- position: 一个 `Animation<Offset>` 类型的属性，表示滑动的位置。Offset 是一个表示平面上的点的类，position 的动画会将子部件从一个 Offset 平移到另一个 Offset。
 - child: 要应用滑动动画的子部件。
 - 用法：
 - SlideTransition 可以用于为一个部件添加滑动动画效果。通常配合 AnimationController 和 Tween 使用，可以实现在一段时间内平移滑动部件。

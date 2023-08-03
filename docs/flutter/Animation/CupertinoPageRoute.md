@@ -6,7 +6,7 @@ CupertinoPageRoute 是 Flutter 中用于实现 iOS 风格页面切换的路由�
 
 CupertinoPageRoute 的主要属性及其功能：
 
-- builder：一个构建页面的回调函数，接受 BuildContext 和 Animation<double> 参数。
+- builder：一个构建页面的回调函数，接受 BuildContext 和 `Animation<double>` 参数。
 - title：页面的标题，将显示在 iOS 导航栏中。
 - settings：用于路由设置的对象，通常包含路由名称等信息。
 - fullscreenDialog：是否以全屏对话框的形式显示页面，默认为 false。

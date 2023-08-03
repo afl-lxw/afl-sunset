@@ -14,7 +14,7 @@ ScaleTransition 是 Flutter 中用于实现缩放动画的一个组件。它可�
 
 ## 属性和功能
 
-- scale: 一个 Animation<double> 类型的属性，表示缩放的比例。当 scale 的值为1时，子部件不会缩放；小于1时，子部件会缩小；大于1时，子部件会放大。
+- scale: 一个 `Animation<double>` 类型的属性，表示缩放的比例。当 scale 的值为1时，子部件不会缩放；小于1时，子部件会缩小；大于1时，子部件会放大。
 - alignment: 用于指定缩放的中心点，默认为 Alignment.center，表示中心对齐。
 - child: 要应用缩放动画的子部件。
 

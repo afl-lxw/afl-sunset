@@ -25,7 +25,7 @@ PageRouteBuilder 的主要属性及其功能：
 - pageBuilder：构建页面内容的函数，通常返回一个 Widget。
 - transitionDuration：过渡动画的持续时间。
 - reverseTransitionDuration：反向过渡动画的持续时间。
-- transitionsBuilder：自定义过渡动画的函数，通常返回一个 Widget，可以使用 BuildContext、Animation<double> 等参数。
+- transitionsBuilder：自定义过渡动画的函数，通常返回一个 Widget，可以使用 BuildContext、`Animation<double>` 等参数。
 
 ## 用法
 

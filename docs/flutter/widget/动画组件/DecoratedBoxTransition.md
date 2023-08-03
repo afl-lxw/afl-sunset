@@ -15,7 +15,7 @@ DecoratedBoxTransition 是 Flutter 中的一个动画过渡组件，用于在两
 
 DecoratedBoxTransition 的主要属性及其功能：
 
-- position：动画的位置，通常是一个 Animation<double>。
+- position：动画的位置，通常是一个 `Animation<double>`。
 - decoration：装饰的样式，通常是一个 Decoration 对象，可以包括颜色、边框、阴影等。
 - child：装饰盒的子组件，通常是一个 Widget。
 

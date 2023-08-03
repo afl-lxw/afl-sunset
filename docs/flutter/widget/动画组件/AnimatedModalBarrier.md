@@ -29,7 +29,7 @@ AnimatedModalBarrier 并不是一个常用的小部件，通常作为其他动�
 - AnimatedModalBarrier 通常作为其他动画或界面元素的一部分使用，而不是单独使用。
 - 在使用 AnimatedModalBarrier 时，应该考虑用户体验，避免过度的阻止用户交互，以免引起混淆或不便。
 
-## 以下是一个使用 AnimatedModalBarrier 的示例：
+## 以下是一个使用 AnimatedModalBarrier 的示例
 
 ```dart
 class ModalBarrierExample extends StatefulWidget {

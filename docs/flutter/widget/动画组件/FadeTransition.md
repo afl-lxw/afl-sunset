@@ -15,7 +15,7 @@ FadeTransition 是 Flutter 中的一个动画过渡组件，用于在两个不�
 
 FadeTransition 的主要属性及其功能：
 
-- opacity：动画的不透明度，通常是一个 Animation<double>。
+- opacity：动画的不透明度，通常是一个 `Animation<double>`。
 - child：要应用淡入淡出效果的子组件，通常是一个 Widget。
 
 ## 用法
