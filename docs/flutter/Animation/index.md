@@ -1,118 +1,33 @@
-# Flutter开发之——动画-AnimationController
+# Flutter开发之——动画
 
-## 概述
+Flutter 中的动画类用于创建各种不同类型的动画效果，从简单的数值变化到复杂的过渡动画都可以通过这些类来实现。
+以下是一些常用的 Flutter 动画类：
 
-- Tween动画控制器，能够根据区间值，执行时间执行相应的动画效果
-- 控制动画的启动、停止，还可以获取动画的运行状态
-- 创建AnimationController时，需要传入duration(动画时长)，lowerBound(区间左值)，upperBound(区间右值)
+- Animation：动画的基础类，表示一个连续变化的数值。
+- AnimationController：管理动画的控制器，用于控制动画的状态、速度、方向等。
+- CurvedAnimation：用于创建一个自定义的动画曲线，可以使动画速度非线性变化，如加速或减速。
+- Tween：定义了动画的起始值和结束值之间的映射关系，用于将 Animation 映射到指定范围内的数值。
+- TweenSequence：用于定义一个动画序列，其中可以包含多个 Tween。
+- AnimatedBuilder：用于构建自定义的动画小部件，它接收 Animation 对象并在每次动画状态变化时进行重建。
+- AnimatedWidget：类似于 AnimatedBuilder，用于构建响应动画状态变化的小部件，但它是一个抽象类，需要继承和扩展。
+- ImplicitlyAnimatedWidget：用于创建隐式动画，其属性变化时会自动创建动画效果，不需要手动控制 Animation。
+- TweenAnimationBuilder：类似于 AnimatedBuilder，但它使用 Tween 来管理属性的变化。
+- AnimationListener：监听 Animation 对象的状态变化，如开始、结束、正向、反向等。
+- AnimatedContainer：一个自带动画效果的容器，用于在属性变化时平滑过渡。
+- Hero：用于创建 Hero 动画，实现在页面之间的平滑过渡。
+- PositionedTransition：在 Stack 中用于实现平移动画效果。
+- RotationTransition：用于实现旋转动画效果。
+- ScaleTransition：用于实现缩放动画效果。
+- SizeTransition：用于实现大小变化的动画效果。
+- SlideTransition：用于实现平移动画效果。
+- AlignTransition：用于实现对齐方式变化的动画效果。
+- FadeTransition：用于实现透明度变化的动画效果。
+- AnimatedDefaultTextStyle：用于创建在文本样式变化时的动画效果。
+- AnimatedList：创建动态列表，支持插入、删除和排序动画。
+- AnimatedOpacity：在透明度变化时创建动画效果。
+- AnimatedPositioned：在位置变化时创建动画效果。
+- AnimatedSwitcher：在切换子部件时创建动画效果。
+- AnimatedTheme：在主题变化时创建动画效果。
+- AnimatedCrossFade：在两个子部件之间创建交叉淡入淡出的动画效果。
 
-## AnimationController
-
-```dart
-AnimationController({
-    double? value,
-    this.duration,
-    this.reverseDuration,
-    this.debugLabel,
-    this.lowerBound = 0.0,
-    this.upperBound = 1.0,
-    this.animationBehavior = AnimationBehavior.normal,
-    required TickerProvider vsync,
-  })
-
-```
-
-| 属性 | 说明 | 取值 |
-| --- | --- | --- |
-| value | 当前动画的取值(默认lowerBound) | double |
-| duration | 动画执行时长 | Duration |
-| reverseDuration | 反向动画时长 | Duration |
-| lowerBound | 变化前的值 | double |
-| upperBound | 变化后的值 | double |
-| vsync | 界面扩展通知触发器 | TickerProvider |
-
-### vsync说明
-
-- vsync：TickerProvider(抽象类)，用于接收动画变化过程中的通知，类似于接口回调
-- 用户在使用时可以选择TickerProviderStateMixin或SingleTickerProviderStateMixin
-- 混入mixins时，使用关键字with(其他关键字有extends，with，implements)，即具备某种特性
-- 单个 AnimationController 的时候使用 SingleTickerProviderStateMixin
-- 多个 AnimationController 使用 TickerProviderStateMixin
-
-### 常用方法
-
-| 方法 | 说明 |
-| --- | --- |
-| forward | 动画开始执行，类似于start |
-| reverse | 动画反向执行 |
-| unbounded | 创建没有上下限的AnimationController |
-| reset | value = lowerBound |
-| animateTo | 正向动画 |
-| animateBack | 反向动画 |
-| repeat | 周期性执行 |
-| fling | 弹性动画 |
-| stop | 停止动画 |
-| dispose | 释放资源 |
-
-### ****动画的状态(AnimationStatus)****
-
-| 取值 | 说明 |
-| --- | --- |
-| dismissed | 动画停止在开始处 |
-| forward | 正向运行动画 |
-| reverse | 反向运行动画 |
-| completed | 动画停止 |
-
-### 实例
-
-```dart
-class _MyHomePageState extends State<MyHomePage> with SingleTickerProvider  //具备TickerProvider特性
-
-//定义动画初始值
-AnimationController _controller;
-double _size = 100;
-
-//动画监听
-  @override
-  void initState() {
-    super.initState();
-     _controller =  AnimationController(
-        vsync: this,
-        duration: Duration(milliseconds: 500),
-        lowerBound: 100,
-        upperBound: 200)
-      ..addStatusListener((AnimationStatus status) {
-        if(status == AnimationStatus.completed){
-          _controller.reverse();
-        }else if(status == AnimationStatus.dismissed){
-          _controller.forward();
-        }
-      })
-      ..addListener(() {
-        setState(() {
-          _size = _controller.value;
-        });
-      });
-  }
-//body
- Center(
-        child: GestureDetector(
-          onTap: (){_controller.forward();},
-          child: Container(
-            height: _size,
-            width: _size,
-            color: Colors.blue,
-            alignment: Alignment.center,
-            child: Text("点我，开始动画"),
-          ),
-        ),
-        )
-//释放资源        
-@override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
-```
-
-![https://cdn.jsdelivr.net/gh/PGzxc/CDN@master/blog-flutter/flutter-animationController-sample.gif](https://cdn.jsdelivr.net/gh/PGzxc/CDN@master/blog-flutter/flutter-animationController-sample.gif)
+这些是一些常用的 Flutter 动画类，通过它们可以实现各种不同的动画效果，从简单的变化到复杂的过渡效果都可以轻松地实现。根据需要选择合适的动画类来创建所需的动画效果。

@@ -1,6 +1,12 @@
 # AnimationController()
 
+## 概述
+
 AnimationController 是 Flutter 中用于控制动画的一个重要类。它用于创建和管理动画的控制器，可以控制动画的持续时间、速度、反向等。以下是关于 AnimationController 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
+
+- Tween动画控制器，能够根据区间值，执行时间执行相应的动画效果
+- 控制动画的启动、停止，还可以获取动画的运行状态
+- 创建AnimationController时，需要传入duration(动画时长)，lowerBound(区间左值)，upperBound(区间右值)
 
 ```dart
   AnimationController({
@@ -19,8 +25,8 @@ AnimationController 是 Flutter 中用于控制动画的一个重要类。它用
 
 以下是 AnimationController 的主要属性及其功能：
 
-- value：当前动画的值，通常在 0.0 到 1.0 之间。
-- duration：动画的持续时间。
+- value：当前动画的值，通常在 0.0 到 1.0 之间。  double
+- duration：动画的持续时间。  Duration
 - reverseDuration：动画反向播放的持续时间。
 - upperBound、lowerBound：动画值的上下限，默认分别为 1.0 和 0.0。
 - vsync：一个 TickerProvider 对象，通常使用 SingleTickerProviderStateMixin 或 TickerProviderStateMixin。
@@ -42,6 +48,30 @@ AnimationController _controller = AnimationController(
 );
 _controller.forward(); // 正向播放动画
 ```
+
+## 常用方法
+
+| 方法 | 说明 |
+| --- | --- |
+| forward | 动画开始执行，类似于start |
+| reverse | 动画反向执行 |
+| unbounded | 创建没有上下限的AnimationController |
+| reset | value = lowerBound |
+| animateTo | 正向动画 |
+| animateBack | 反向动画 |
+| repeat | 周期性执行 |
+| fling | 弹性动画 |
+| stop | 停止动画 |
+| dispose | 释放资源 |
+
+### ****动画的状态(AnimationStatus)****
+
+| 取值 | 说明 |
+| --- | --- |
+| dismissed | 动画停止在开始处 |
+| forward | 正向运行动画 |
+| reverse | 反向运行动画 |
+| completed | 动画停止 |
 
 ## 使用场景
 
