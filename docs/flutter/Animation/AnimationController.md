@@ -1,4 +1,4 @@
-# AnimationController()
+# AnimationController
 
 ## 概述
 

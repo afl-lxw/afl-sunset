@@ -334,7 +334,7 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/Animation/',
         '/flutter/Animation/Tween.md',
         '/flutter/Animation/AnimatedWidgetBaseState.md',
-        '/flutter/Animation/AnimatedContainer.md',
+        '/flutter/Animation/AnimationController.md',
         '/flutter/Animation/CupertinoPageRoute.md',
         '/flutter/Animation/CurvedAnimation.md',
 
