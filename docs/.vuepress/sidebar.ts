@@ -281,6 +281,21 @@ export const sidebarZh: SidebarConfig = {
           ]
         },
         {
+          text: '布局组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/布局组件/',
+            '/flutter/widget/布局组件/constraints布局约束.md',
+            '/flutter/widget/布局组件/Align.md',
+            '/flutter/widget/布局组件/Flow.md',
+            '/flutter/widget/布局组件/Wrap.md',
+            '/flutter/widget/布局组件/Positioned.md',
+            '/flutter/widget/布局组件/Stack.md',
+            '/flutter/widget/布局组件/LayoutBuilder.md',
+
+          ]
+        },
+        {
           text: '动画组件',
           collapsible: true,
           children: [
