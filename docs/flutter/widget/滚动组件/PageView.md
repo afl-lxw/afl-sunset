@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # PageView
 
 PageView 是 Flutter 中的一个滚动视图小部件，用于显示一个可水平滑动的子部件列表。它常用于创建引导页、图片浏览器、卡片式布局等场景。
@@ -88,5 +91,9 @@ class MyGuidePage extends StatelessWidget {
   }
 }
 ```
+
+如图：
+
+![](./imgs/PageViewWidget.gif)
 
 在这个示例中，我们使用 PageView.builder 创建一个简单的引导页。每个页面都有不同的颜色和文本，用户可以通过左右滑动切换页面。

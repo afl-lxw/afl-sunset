@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # NestedScrollView
 
 NestedScrollView 是 Flutter 中用于创建嵌套滚动视图的小部件，它可以在一个滚动视图内部嵌套另一个滚动视图，从而实现更复杂的滚动效果和布局。常用于同时展示多种滚动视图，例如可伸缩的头部、折叠的导航栏等情况。
@@ -90,5 +93,9 @@ class MyNestedScrollPage extends StatelessWidget {
   }
 }
 ```
+
+如图所示
+
+![NestedScrollView](./imgs/NestedScrollView.gif)
 
 在这个示例中，我们使用 NestedScrollView 创建了一个包含可伸缩头部和滚动列表的页面。在 headerSliverBuilder 中添加了 SliverAppBar 作为头部，而在 body 中使用了 ListView.builder 作为主体滚动视图。这个示例演示了如何使用 NestedScrollView 创建一个同时包含多种滚动效果的页面。

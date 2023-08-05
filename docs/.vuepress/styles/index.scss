@@ -261,3 +261,10 @@ body::before {
     border-bottom: 1px solid #ccc;
   }
 }
+
+
+.custom-page-imgs-class .page .theme-default-content img {
+  max-height: 544px;
+  margin: 0 auto;
+  display: block;
+}

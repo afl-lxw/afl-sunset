@@ -2,8 +2,8 @@
 home: true
 title: A Sunset
 navbar: true
-heroImage: /images/user-avatar.png
-heroImageDark: /images/user-avatar-dark.png
+heroImage: /images/home.png
+heroImageDark: /images/home.png
 heroHeight: 280
 heroText: Where there is a will, there is a way
 tagline: 

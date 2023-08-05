@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedList
 
 > AnimatedList 是 Flutter 中用于创建具有动画效果的列表的小部件。它允许您在列表中插入、删除或移动项目时产生平滑的动画过渡效果
@@ -114,6 +117,10 @@ String removedItem =_items.removeAt(index);
   }
 }
 ```
+
+如图所示
+
+![AnimatedList](./imgs/AnimatedList.gif)
 
 ## 注意事项
 

@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # GridView
 
 GridView是Flutter中用于展示网格布局的小部件，它可以在垂直或水平方向上展示一组子项，并支持滚动。GridView常用于展示图像列表、商品展示、瀑布流布局等，是构建网格布局的重要组件。
@@ -118,6 +121,10 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+如图所示
+
+![GridViewWidget](./imgs/gridView.gif)
 
 在这个示例中，我们创建了一个简单的GridView，其中包含10个带有颜色和文本的子项。我们使用了GridView.builder来进行懒加载，以优化性能。通过调整gridDelegate的参数，我们可以实现不同样式的网格布局。
 

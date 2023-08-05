@@ -1,3 +1,7 @@
+---
+pageClass: custom-page-imgs-class
+---
+
 # SingleChildScrollView
 
 > SingleChildScrollView 是 Flutter 中的一个小部件，用于创建一个只能包含单个子部件的滚动视图，当内容超过视图大小时，可以在垂直方向上进行滚动。
@@ -82,5 +86,9 @@ class MyScrollPage extends StatelessWidget {
   }
 }
 ```
+
+如图
+
+![Alt text](./imgs/ListView-1.gif)
 
 在这个示例中，我们使用 SingleChildScrollView 创建了一个垂直滚动的内容，其中包含了多个子部件。当内容超过视图大小时，用户可以在垂直方向上进行滚动。

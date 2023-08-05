@@ -80,4 +80,8 @@ class MyScrollPage extends StatelessWidget {
 }
 ```
 
+如图所示
+
+![CustomScrollViewWidget](./imgs/CustomScrollViewWidget.gif)
+
 在这个示例中，我们创建了一个带有可伸缩 AppBar 的滚动页面。CustomScrollView 中嵌套了两个滚动视图组件：SliverAppBar 和 SliverList。SliverAppBar 实现了可伸缩的头部，而 SliverList 展示了一个包含多个列表项的滚动列表。

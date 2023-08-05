@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # Scrollable
 
 Scrollable 是 Flutter 中一个抽象的滚动容器小部件，它用于将其他小部件包装成可滚动的组件。它本身通常不会直接使用，而是作为其他滚动容器（如 ListView、GridView、CustomScrollView 等）的基础, 用于创建自定义的滚动效果。
@@ -59,5 +62,9 @@ class MyScrollPage extends StatelessWidget {
   }
 }
 ```
+
+效果如图
+
+![Scrollable](./imgs/ListView-1.gif)
 
 在这个示例中，我们使用 Scrollable 和 CustomScrollView 来创建一个自定义的滚动视图。注意，在实际开发中，通常会直接使用其他滚动容器，而不是直接使用 Scrollable。

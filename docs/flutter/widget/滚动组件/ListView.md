@@ -1,3 +1,7 @@
+---
+pageClass: custom-page-imgs-class
+---
+
 # ListView
 
 ListView是Flutter中用于显示列表数据的基本小部件，它支持滚动，并且可以在垂直或水平方向上展示多个子项。ListView常用于展示大量数据、聊天记录、商品列表等，是构建滚动列表的重要组件。下面是ListView的常用属性及其功能：
@@ -146,5 +150,10 @@ ListView(
   }),
 )
 ```
+
+如图
+
+![Alt text](./imgs/ListView-1.gif)
+
 
 在这个示例中，ListView包含20个文本子项，每个子项显示一个标题。scrollDirection属性设置为垂直方向，shrinkWrap属性设置为true，以适应包裹的内容大小，padding属性添加内边距。注意，这只是一个简单的演示，实际应用中可以根据需要进行更复杂的定制和交互。
