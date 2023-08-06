@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedBuilder(动画构建器)
 
 AnimatedBuilder 是 Flutter 中的一个小部件，它用于通过传递给它的动画来构建小部件树。它允许您将动画的值映射到部件属性，只有在动画值发生变化时才会重建，从而避免不必要的重建。以下是关于 AnimatedBuilder 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -50,30 +53,19 @@ AnimatedBuilder 适用于以下场景：
 以下是一个示例，展示了如何使用 AnimatedBuilder 来根据动画值旋转 FlutterLogo：
 
 ```dart
-import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+class AnimatedBuilderWidget extends StatefulWidget {
+  const AnimatedBuilderWidget({super.key});
 
-class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AnimatedBuilderExample(),
-    );
-  }
+  State<AnimatedBuilderWidget> createState() => _AnimatedBuilderWidgetState();
 }
 
-class AnimatedBuilderExample extends StatefulWidget {
-  @override
-  _AnimatedBuilderExampleState createState() =>_AnimatedBuilderExampleState();
-}
-
-class _AnimatedBuilderExampleState extends State<AnimatedBuilderExample>
+class _AnimatedBuilderWidgetState extends State<AnimatedBuilderWidget>
     with SingleTickerProviderStateMixin {
-late AnimationController_controller;
+  late AnimationController _controller;
 
   @override
   void initState() {
@@ -99,7 +91,7 @@ late AnimationController_controller;
           animation: _controller,
           builder: (context, child) {
             return Transform.rotate(
-              angle:_controller.value *2* pi,
+              angle: _controller.value * 2 * pi,
               child: FlutterLogo(size: 100),
             );
           },
@@ -108,6 +100,11 @@ late AnimationController_controller;
     );
   }
 }
+
 ```
+
+如图所示
+
+![AnimatedBuilderWidget](./imgs/AnimatedBuilderWidget.gif)
 
 在这个示例中，我们使用 AnimatedBuilder 来创建一个可以根据动画值旋转的 FlutterLogo。使用 AnimationController 控制动画。

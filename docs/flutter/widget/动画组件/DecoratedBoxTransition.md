@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # DecoratedBoxTransition(装饰盒过渡组件)
 
 DecoratedBoxTransition 是 Flutter 中的一个动画过渡组件，用于在两个装饰盒之间应用动画过渡效果。它可以在不同的装饰盒之间应用动画，例如改变颜色、边框、阴影等装饰效果。以下是关于 DecoratedBoxTransition 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -63,70 +66,79 @@ DecoratedBoxTransition 适用于以下场景：
 ```dart
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class AnimatedDecorationExample extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AnimationExample(),
-    );
-  }
+  _AnimatedDecorationExampleState createState() =>
+      _AnimatedDecorationExampleState();
 }
 
-class AnimationExample extends StatefulWidget {
-  @override
-  _AnimationExampleState createState() =>_AnimationExampleState();
-}
-
-class _AnimationExampleState extends State<AnimationExample> with SingleTickerProviderStateMixin {
-late AnimationController_controller;
-  late Animation<double> _animation;
+class _AnimatedDecorationExampleState extends State<AnimatedDecorationExample>
+    with TickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation<Decoration> _animation;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: Duration(seconds: 2),
+    _animationController = AnimationController(
       vsync: this,
+      duration: Duration(milliseconds: 500),
     );
 
-    _animation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOut,
-    );
-
-    _controller.forward();
+    _animation = DecorationTween(
+      begin: BoxDecoration(color: Colors.blue),
+      end: BoxDecoration(color: Colors.red),
+    ).animate(_animationController);
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
+  void _toggleDecoration() {
+    if (_animationController.status == AnimationStatus.completed) {
+      _animationController.reverse();
+    } else {
+      _animationController.forward();
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('DecoratedBoxTransition Example')),
+      appBar: AppBar(
+        title: Text('Animated Decoration Example'),
+      ),
       body: Center(
         child: DecoratedBoxTransition(
-          position: DecorationTween(
-            begin: BoxDecoration(color: Colors.blue),
-            end: BoxDecoration(color: Colors.red),
-          ).animate(_animation),
-          decoration: BoxDecoration(),
-          child: Container(
-            width: 200,
-            height: 200,
+          position: DecorationPosition.background,
+          decoration: _animation,
+          child: GestureDetector(
+            onTap: _toggleDecoration,
+            child: Container(
+              width: 200,
+              height: 200,
+              alignment: Alignment.center,
+              child: Text(
+                'Tap to Change Decoration',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
           ),
         ),
       ),
     );
   }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
 }
+
+void main() {
+  runApp(MaterialApp(home: AnimatedDecorationExample()));
+}
+
 ```
+
+![AnimatedDecorationExample](./imgs/AnimatedDecorationExample.gif)
 
 在这个示例中，我们使用 DecoratedBoxTransition 实现了一个装饰效果的动画过渡，将容器的背景颜色从蓝色渐变到红色。

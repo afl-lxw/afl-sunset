@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # Transform(变换)
 
 Transform 是 Flutter 中用于对子部件进行矩阵变换的组件。通过 Transform 组件，你可以对子部件进行平移、旋转、缩放等变换操作，从而实现各种复杂的界面效果。
@@ -33,17 +36,68 @@ Transform 是 Flutter 中用于对子部件进行矩阵变换的组件。通过 
 ## 属性示例
 
 ```dart
-Transform(
-  alignment: Alignment.center,
-  transform: Matrix4.rotationZ(0.5),
-  child: Container(
-    width: 100,
-    height: 100,
-    color: Colors.blue,
-    child: Center(child: Text('Transform Example')),
-  ),
-)
+import 'package:flutter/material.dart';
+
+class TransformExample extends StatefulWidget {
+  @override
+  _TransformExampleState createState() => _TransformExampleState();
+}
+
+class _TransformExampleState extends State<TransformExample> {
+  double _angle = 0.0;
+  double _scale = 1.0;
+  Offset _offset = Offset(0.0, 0.0);
+
+  void _updateTransform() {
+    setState(() {
+      _angle += 45.0;
+      _scale = _scale == 1.0 ? 1.5 : 1.0;
+      _offset = Offset(_offset.dx + 50.0, _offset.dy + 50.0);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Complex Transform Example')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Transform(
+              transform: Matrix4.identity()
+                ..translate(_offset.dx, _offset.dy)
+                ..rotateZ(_angle * (3.1415927 / 180))
+                ..scale(_scale),
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    'Transformed',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: _updateTransform,
+              child: Text('Apply Transform'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 ```
+
+![TransformExample](./imgs/TransformExample.gif)
+
+在这个示例中，我们使用Transform小部件来应用复杂的变换效果。每次按下“Apply Transform”按钮时，小部件将以45度的角度旋转，缩放为1.5倍，并向右下方移动50个单位。这个例子演示了如何在一个小部件上同时应用多个不同类型的变换。
 
 ## 注意事项
 

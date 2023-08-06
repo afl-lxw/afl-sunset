@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AlignTransition(对齐过渡)
 
 AlignTransition 是 Flutter 中用于在过渡期间根据动画值调整部件的对齐方式的小部件。它可以在子部件的不同对齐方式之间创建平滑的过渡效果。以下是关于 AlignTransition 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -48,41 +51,38 @@ AlignTransition 适用于以下场景：
 ```dart
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class AlignTransitionWidget extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AlignTransitionExample(),
-    );
-  }
+  _AlignTransitionWidgetState createState() => _AlignTransitionWidgetState();
 }
 
-class AlignTransitionExample extends StatefulWidget {
-  @override
-  _AlignTransitionExampleState createState() =>_AlignTransitionExampleState();
-}
-
-class _AlignTransitionExampleState extends State<AlignTransitionExample>
+class _AlignTransitionWidgetState extends State<AlignTransitionWidget>
     with SingleTickerProviderStateMixin {
-late AnimationController_controller;
-  late Animation<AlignmentGeometry> _animation;
+  late AnimationController _controller;
+  late Animation<Alignment> _animation;
+  final Alignment _startAlignment = Alignment.topLeft;
+  final Alignment _endAlignment = Alignment.bottomRight;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 2),
-    )..repeat(reverse: true);
+      duration: const Duration(seconds: 1),
+    );
 
-    _animation = Tween<AlignmentGeometry>(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
+    _animation = AlignmentTween(
+      begin: _startAlignment,
+      end: _endAlignment,
     ).animate(_controller);
+  }
+
+  void _toggleAlignment() {
+    if (_controller.status == AnimationStatus.completed) {
+      _controller.reverse();
+    } else {
+      _controller.forward();
+    }
   }
 
   @override
@@ -94,16 +94,34 @@ late AnimationController_controller;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('AlignTransition Example')),
+      appBar: AppBar(title: const Text('AlignTransition Example')),
       body: Center(
-        child: AlignTransition(
-          alignment: _animation,
-          child: FlutterLogo(size: 100),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(
+              height: 200,
+              child: AlignTransition(
+                alignment: _animation,
+                child: const FlutterLogo(size: 100),
+              ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _toggleAlignment,
+              child: const Text('Toggle Alignment'),
+            ),
+          ],
         ),
       ),
     );
   }
 }
+
 ```
+
+如图所示
+
+![AlignTransition](./imgs/AlignTransition.gif)
 
 在这个示例中，我们使用 AlignTransition 将 FlutterLogo 在 Alignment.topLeft 和 Alignment.bottomRight 之间进行平滑过渡。使用 AnimationController 和 Tween 来控制过渡效果。

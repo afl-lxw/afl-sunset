@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedSwitcher(动画切换器)
 
 AnimatedSwitcher 是一个小部件，用于在不同的子元素之间进行动画过渡。它可以在切换子元素时添加淡入淡出、缩放等过渡动画，从而在视觉上增强切换效果。
@@ -93,3 +96,5 @@ class _SwitcherExampleState extends State<SwitcherExample> {
   }
 }
 ```
+
+![SwitcherExample](./imgs/SwitcherExample.gif)

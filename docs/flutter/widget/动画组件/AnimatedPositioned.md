@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedPositioned(动画定位)
 
 AnimatedPositioned 是 Flutter 中的一个小部件，用于在不同位置之间平滑地过渡部件的位置。它允许您在不同位置之间创建动画过渡，从而实现部件的平移效果。以下是关于 AnimatedPositioned 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -62,26 +65,16 @@ AnimatedPositioned 适用于以下场景：
 ```dart
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AnimatedPositionedExample(),
-    );
-  }
-}
-
 class AnimatedPositionedExample extends StatefulWidget {
+  const AnimatedPositionedExample({super.key});
+
   @override
-  _AnimatedPositionedExampleState createState() =>_AnimatedPositionedExampleState();
+  State<AnimatedPositionedExample> createState() =>
+      _AnimatedPositionedExampleState();
 }
 
 class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
-bool_isLeft = true;
+  bool _isLeft = true;
   bool _isTop = true;
 
   void _togglePosition() {
@@ -96,11 +89,14 @@ bool_isLeft = true;
     return Scaffold(
       appBar: AppBar(title: Text('AnimatedPositioned Example')),
       body: Center(
+          child: SizedBox(
+        height: 200,
+        width: 300,
         child: Stack(
           children: [
             AnimatedPositioned(
               left: _isLeft ? 0 : 100,
-              top:_isTop ? 0 : 100,
+              top: _isTop ? 0 : 100,
               duration: Duration(seconds: 1),
               child: Container(width: 100, height: 100, color: Colors.blue),
             ),
@@ -110,10 +106,13 @@ bool_isLeft = true;
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }
+
 ```
+
+![AnimatedPositionedExample](./imgs/AnimatedPositionedExample.gif)
 
 在这个示例中，我们使用 AnimatedPositioned 来创建部件位置变化时的平滑过渡。通过按钮来切换部件的位置。

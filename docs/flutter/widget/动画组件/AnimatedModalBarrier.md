@@ -32,56 +32,65 @@ AnimatedModalBarrier 并不是一个常用的小部件，通常作为其他动�
 ## 以下是一个使用 AnimatedModalBarrier 的示例
 
 ```dart
-class ModalBarrierExample extends StatefulWidget {
+import 'package:flutter/material.dart';
+
+class AnimatedModalBarrierWidget extends StatefulWidget {
+  const AnimatedModalBarrierWidget({super.key});
+
   @override
-  _ModalBarrierExampleState createState() =>_ModalBarrierExampleState();
+  State<AnimatedModalBarrierWidget> createState() =>
+      _AnimatedModalBarrierWidgetState();
 }
 
-class _ModalBarrierExampleState extends State<ModalBarrierExample> {
-bool_showDialog = false;
+class _AnimatedModalBarrierWidgetState
+    extends State<AnimatedModalBarrierWidget> {
+  bool _isDialogVisible = false;
 
-  void _toggleDialog() {
+  void _showDialog() {
     setState(() {
-      _showDialog = !_showDialog;
+      _isDialogVisible = true;
+    });
+  }
+
+  void _closeDialog() {
+    setState(() {
+      _isDialogVisible = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Modal Barrier Example'),
-      ),
+      appBar: AppBar(title: Text('AnimatedModalBarrier Example')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: <Widget>[
             ElevatedButton(
-              onPressed: _toggleDialog,
+              onPressed: _showDialog,
               child: Text('Show Dialog'),
             ),
-            AnimatedModalBarrier(
-              dismissible: true,
-              color:_showDialog ? Colors.black54 : Colors.transparent,
-              child: _showDialog
-                  ? AlertDialog(
-                      title: Text('Dialog'),
-                      content: Text('This is a modal dialog.'),
-                      actions: [
-                        TextButton(
-                          onPressed:_toggleDialog,
-                          child: Text('Close'),
-                        ),
-                      ],
-                    )
-                  : null,
-            ),
+            _isDialogVisible
+                ? AnimatedModalBarrier(
+                    dismissible: true,
+                    color: AlwaysStoppedAnimation<Color>(
+                        Colors.black.withOpacity(0.5)),
+                    semanticsLabel: 'Modal Barrier',
+                  )
+                : SizedBox(),
           ],
         ),
       ),
+      floatingActionButton: _isDialogVisible
+          ? FloatingActionButton(
+              onPressed: _closeDialog,
+              child: Icon(Icons.close),
+            )
+          : null,
     );
   }
 }
+
 ```
 
 在上面的示例中，点击 "Show Dialog" 按钮会在界面上显示一个透明的遮罩层，阻止用户点击其他区域，同时展示一个对话框。点击遮罩层或对话框中的关闭按钮，遮罩层会消失，用户可以继续交互。

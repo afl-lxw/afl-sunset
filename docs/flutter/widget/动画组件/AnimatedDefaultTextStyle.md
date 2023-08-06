@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedDefaultTextStyle(动画文本样式)
 
 AnimatedDefaultTextStyle 是 Flutter 中的一个小部件，用于在不同的文本样式之间创建平滑的过渡动画。它可以让文本的样式（如字体大小、颜色、字体粗细等）在改变时具有动画效果，从而使 UI 变化更加平滑和吸引人。
@@ -62,3 +65,66 @@ AnimatedDefaultTextStyle(
 - 注意在改变文本样式时，确保 style 和 targetStyle 中的属性名和值对应正确，以获得预期的动画效果。
 
 总之，AnimatedDefaultTextStyle 是一个非常有用的小部件，它能够为文本样式的变化添加平滑的动画效果，增强用户界面的交互和可视体验。
+
+
+## 事例
+
+```dart
+import 'package:flutter/material.dart';
+
+class AnimatedDefaultTextStyleWidget extends StatefulWidget {
+  const AnimatedDefaultTextStyleWidget({super.key});
+
+  @override
+  State<AnimatedDefaultTextStyleWidget> createState() =>
+      _AnimatedDefaultTextStyleWidgetState();
+}
+
+class _AnimatedDefaultTextStyleWidgetState
+    extends State<AnimatedDefaultTextStyleWidget> {
+  bool _isBold = false;
+  double _fontSize = 20.0;
+  Color _color = Colors.black;
+
+  void _toggleStyle() {
+    setState(() {
+      _isBold = !_isBold;
+      _fontSize = _isBold ? 24.0 : 20.0;
+      _color = _isBold ? Colors.blue : Colors.black;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('AnimatedDefaultTextStyle Example')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            AnimatedDefaultTextStyle(
+              child: Text('Hello, Flutter!'),
+              style: TextStyle(
+                fontWeight: _isBold ? FontWeight.bold : FontWeight.normal,
+                fontSize: _fontSize,
+                color: _color,
+              ),
+              duration: Duration(milliseconds: 500),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _toggleStyle,
+              child: Text('Toggle Style'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+如图所示
+
+![AnimatedDefaultTextStyleWidget](./imgs/AnimatedDefaultTextStyleWidget.gif)

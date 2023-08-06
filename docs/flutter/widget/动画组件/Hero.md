@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # Hero(页面切换时实现元素的平滑过渡动画)
 
 Hero 是 Flutter 中的一个动画效果组件，用于在页面切换时实现元素的平滑过渡动画。通过 Hero，可以将一个 Widget 从一个页面转换到另一个页面，并在两个页面之间应用动画过渡。以下是关于 Hero 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -105,5 +108,7 @@ class DetailPage extends StatelessWidget {
   }
 }
 ```
+
+![Hero](./imgs/Hero.gif)
 
 在这个示例中，我们在首页和详情页之间使用 Hero 实现了一个图片的平滑过渡效果。用户点击首页的图片时，会过渡到详情页，并应用动画效果。注意确保标签 tag 在两个页面中具有相同的值。

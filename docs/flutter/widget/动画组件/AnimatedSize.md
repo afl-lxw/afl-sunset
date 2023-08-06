@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedSize(动画大小)
 
 AnimatedSize 是一个可以在不同大小之间平滑过渡的小部件，它通过动画的方式改变其子元素的大小。通过使用此小部件，您可以在状态之间创建更平滑的动画过渡，如更改容器的大小、文本的字体大小等。
@@ -40,13 +43,18 @@ AnimatedSize 可以在需要平滑过渡大小的场景中使用，如切换视�
 ## 以下是一个使用 AnimatedSize 的示例
 
 ```dart
+import 'package:flutter/material.dart';
+
 class SizeAnimationExample extends StatefulWidget {
+  const SizeAnimationExample({super.key});
+
   @override
-  _SizeAnimationExampleState createState() =>_SizeAnimationExampleState();
+  State<SizeAnimationExample> createState() => _SizeAnimationExampleState();
 }
 
-class _SizeAnimationExampleState extends State<SizeAnimationExample> {
-bool_isExpanded = false;
+class _SizeAnimationExampleState extends State<SizeAnimationExample>
+    with TickerProviderStateMixin {
+  bool _isExpanded = false;
 
   void _toggleSize() {
     setState(() {
@@ -68,7 +76,7 @@ bool_isExpanded = false;
             duration: Duration(milliseconds: 500),
             curve: Curves.easeInOut,
             child: Container(
-              width:_isExpanded ? 200 : 100,
+              width: _isExpanded ? 200 : 100,
               height: _isExpanded ? 200 : 100,
               color: Colors.blue,
               alignment: Alignment.center,
@@ -83,6 +91,9 @@ bool_isExpanded = false;
     );
   }
 }
+
 ```
+
+![SizeAnimationExample](./imgs/SizeAnimationExample.gif)
 
 在上面的示例中，点击容器会产生平滑的大小过渡效果。容器的大小从初始大小（100x100）平滑地过渡到展开的大小（200x200）。

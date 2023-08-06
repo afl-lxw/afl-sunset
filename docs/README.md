@@ -8,10 +8,10 @@ heroHeight: 280
 heroText: Where there is a will, there is a way
 tagline: 
 pageClass: home-page
-# actions:
-#   - text: Start
-#     link: /web/javascript/设计模式.md
-#     type: primary
+actions:
+  - text: Start
+    link: /web/javascript/设计模式.md
+    type: primary
 #   - text: GitHub
 #     link: https://github.com/afl-lxw
 #     type: secondary

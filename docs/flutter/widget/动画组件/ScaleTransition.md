@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # ScaleTransition(transition)
 
 ScaleTransition 是 Flutter 中用于实现缩放动画的一个组件。它可以在一个子部件上应用缩放动画，并根据提供的动画进行缩放。
@@ -66,6 +69,8 @@ Widget build(BuildContext context) {
   );
 }
 ```
+
+![ScaleTransitionWidget](./imgs/ScaleTransitionWidget.gif)
 
 ## 注意事项
 

@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedCrossFade(淡入淡出过渡)
 
 AnimatedCrossFade 是 Flutter 中的一个小部件，用于在两个不同的状态之间进行平滑的过渡。它允许您在两个子部件之间进行淡入淡出的过渡效果，根据布尔值的变化来控制显示哪个子部件。以下是关于 AnimatedCrossFade 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -61,30 +64,20 @@ AnimatedCrossFade 适用于以下场景：
 ```dart
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+class AnimatedCrossFadeWidget extends StatefulWidget {
+  const AnimatedCrossFadeWidget({super.key});
 
-class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: AnimatedCrossFadeExample(),
-    );
-  }
+  State<AnimatedCrossFadeWidget> createState() =>
+      _AnimatedCrossFadeWidgetState();
 }
 
-class AnimatedCrossFadeExample extends StatefulWidget {
-  @override
-  _AnimatedCrossFadeExampleState createState() =>_AnimatedCrossFadeExampleState();
-}
-
-class _AnimatedCrossFadeExampleState extends State<AnimatedCrossFadeExample> {
-bool_isFirst = true;
+class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
+  var bool_isFirst = true;
 
   void _toggleChild() {
     setState(() {
-      _isFirst = !_isFirst;
+      bool_isFirst = !bool_isFirst;
     });
   }
 
@@ -96,17 +89,29 @@ bool_isFirst = true;
         child: GestureDetector(
           onTap: _toggleChild,
           child: AnimatedCrossFade(
-            crossFadeState:
-                _isFirst ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-            duration: Duration(seconds: 1),
-            firstChild: FlutterLogo(size: 100, colors: Colors.red),
-            secondChild: FlutterLogo(size: 100, colors: Colors.blue),
+            crossFadeState: bool_isFirst
+                ? CrossFadeState.showFirst
+                : CrossFadeState.showSecond,
+            duration: const Duration(seconds: 1),
+            firstChild: const FlutterLogo(
+                size: 100,
+                style: FlutterLogoStyle.horizontal,
+                curve: Curves.bounceInOut),
+            secondChild: const FlutterLogo(
+                size: 100,
+                style: FlutterLogoStyle.markOnly,
+                curve: Curves.easeIn),
           ),
         ),
       ),
     );
   }
 }
+
 ```
+
+如图所示
+
+![AnimatedCrossFadeWidget](./imgs/AnimatedCrossFadeWidget.gif)
 
 在这个示例中，我们使用 AnimatedCrossFade 来创建两个不同子部件之间的淡入淡出过渡。通过点击来切换显示的子部件。

@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedListState(动画列表状态)
 
 AnimatedListState 并不是一个小部件，而是一个状态对象，它管理了 AnimatedList 小部件中的数据和操作。通过 AnimatedListState，您可以对列表项进行添加、删除、移动等操作，并且在这些操作时产生平滑的过渡动画效果。
@@ -12,47 +15,87 @@ AnimatedListState 并不是一个小部件，而是一个状态对象，它管�
 ## 用法
 
 ```dart
-class AnimatedListExample extends StatefulWidget {
+import 'package:flutter/material.dart';
+
+class AnimatedListStateWidget extends StatefulWidget {
+  const AnimatedListStateWidget({super.key});
+
   @override
-  _AnimatedListExampleState createState() =>_AnimatedListExampleState();
+  State<AnimatedListStateWidget> createState() =>
+      _AnimatedListStateWidgetState();
 }
 
-class _AnimatedListExampleState extends State<AnimatedListExample> {
-final GlobalKey<AnimatedListState>_listKey = GlobalKey<AnimatedListState>();
-  List<String> _items = ['Item 1', 'Item 2', 'Item 3'];
+class _AnimatedListStateWidgetState extends State<AnimatedListStateWidget> {
+  List<int> _items = [1, 2, 3];
+  GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
+
+  void _addItem() {
+    int newItem = _items.length + 1;
+    _items.add(newItem);
+    _listKey.currentState?.insertItem(_items.length - 1);
+  }
+
+  void _removeItem() {
+    int removedItem = _items.length;
+    _listKey.currentState?.removeItem(
+      _items.length - 1,
+      (context, animation) => buildRemovedItem(removedItem, animation),
+    );
+    _items.removeAt(_items.length - 1);
+  }
+
+  Widget buildRemovedItem(int item, Animation<double> animation) {
+    return SizeTransition(
+      sizeFactor: animation,
+      child: ListTile(
+        title: Text('Item $item'),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedList(
-      key: _listKey,
-      initialItemCount:_items.length,
-      itemBuilder: (context, index, animation) {
-        return _buildItem(_items[index], animation);
-      },
+    return Scaffold(
+      appBar: AppBar(title: Text('AnimatedListState Example')),
+      body: AnimatedList(
+        key: _listKey,
+        initialItemCount: _items.length,
+        itemBuilder: (context, index, animation) {
+          return buildListItem(_items[index], animation);
+        },
+      ),
+      floatingActionButton: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          FloatingActionButton(
+            onPressed: _addItem,
+            child: Icon(Icons.add),
+          ),
+          SizedBox(height: 16),
+          FloatingActionButton(
+            onPressed: _removeItem,
+            child: Icon(Icons.remove),
+          ),
+        ],
+      ),
     );
   }
 
-  Widget _buildItem(String item, Animation<double> animation) {
+  Widget buildListItem(int item, Animation<double> animation) {
     return SizeTransition(
       sizeFactor: animation,
-      child: ListTile(title: Text(item)),
+      child: ListTile(
+        title: Text('Item $item'),
+      ),
     );
   }
-
-  void _addItem() {
-    int newIndex =_items.length;
-    _items.add('Item ${newIndex + 1}');
-    _listKey.currentState?.insertItem(newIndex);
-  }
-
-  void _removeItem(int index) {
-    String removedItem =_items.removeAt(index);
-    _listKey.currentState?.removeItem(index, (context, animation) {
-      return_buildItem(removedItem, animation);
-    });
-  }
 }
+
 ```
+
+如图所示
+
+![AnimatedListStateWidget](./imgs/AnimatedListStateWidget.gif)
 
 ## 使用场景
 

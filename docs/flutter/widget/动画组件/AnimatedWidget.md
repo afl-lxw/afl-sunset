@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedWidget(动画组件)
 
 AnimatedWidget 是一个抽象类，用于简化在动画过程中更新部件的过程。它允许您封装动画逻辑，并将部件更新与动画同步。以下是关于 AnimatedWidget 的详细介绍，包括其属性、功能、用法、使用场景、示例和注意事项。
@@ -75,7 +78,7 @@ class AnimatedWidgetExample extends StatefulWidget {
 }
 
 class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample> with SingleTickerProviderStateMixin {
-late AnimationController_controller;
+late AnimationController _controller;
   late Animation<double> _animation;
 
   @override
@@ -118,5 +121,7 @@ class MyAnimatedWidget extends AnimatedWidget {
   }
 }
 ```
+
+![AnimatedWidgetExample](./imgs/AnimatedWidgetExample.gif)
 
 在这个示例中，我们创建了一个继承自 AnimatedWidget 的自定义动画部件 MyAnimatedWidget，并将缩放动画的动画值与部件的状态绑定在一起。

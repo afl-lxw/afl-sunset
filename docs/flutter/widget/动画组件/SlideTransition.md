@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # SlideTransition(平移滑动动画)
 
 SlideTransition 是 Flutter 中用于实现滑动动画的一个组件。它可以在一个子部件上应用滑动动画，并根据提供的动画进行平移滑动。
@@ -63,6 +66,8 @@ Widget build(BuildContext context) {
   );
 }
 ```
+
+![SlideTransitionWidget](./imgs/SlideTransitionWidget.gif)
 
 ## 注意事项
 

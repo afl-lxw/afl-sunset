@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-imgs-class
+---
 # AnimatedPhysicalModel(动画物理模型)
 
 AnimatedPhysicalModel 是一个可以在不同状态之间平滑过渡的小部件，它在物理模型上应用阴影和裁剪效果。通过使用此小部件，您可以在状态之间创建更平滑的动画过渡，如更改阴影、颜色、边框和裁剪等。
@@ -91,5 +94,7 @@ bool_isPressed = false;
   }
 }
 ```
+
+![PhysicalModelExample](./imgs/PhysicalModelExample.gif)
 
 在上面的示例中，点击 "Press Me" 容器会产生阴影和圆角的平滑动画效果。阴影和圆角的改变在点击时会有平滑过渡，而不是突然改变。
