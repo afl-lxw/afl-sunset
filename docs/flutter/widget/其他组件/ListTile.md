@@ -64,3 +64,55 @@
 - horizontalTitleGap：设置主要标题与图标之间的水平间距。
 - minVerticalPadding：设置列表项的最小垂直内边距。
 - minLeadingWidth：设置 leading 组件的最小宽度。
+
+## 功能
+
+- 提供了创建简单列表项的简便方法，可以包含图标、标题、子标题等内容。
+- 可以响应点击和长按事件，执行相应的回调操作。
+- 支持显示选中状态和设置不同的背景颜色。
+
+## 用法
+
+- ListTile 通常用于构建包含标题、图标等信息的列表项，适用于各种不同类型的列表视图。
+
+## 使用场景
+
+- 适用于构建各种类型的列表，如设置菜单、通知列表、消息列表等。
+- 在需要显示简单的列表项内容时，可以方便地使用 ListTile 来快速创建。
+
+## 注意事项
+
+- 在包含多个 ListTile 的列表中，确保使用适当的分隔线或间距来区分各个列表项。
+- 如果需要更复杂的布局，可能需要使用自定义的小部件来构建列表项。
+
+## 示例
+
+以下示例展示了如何使用 ListTile 来创建一个简单的列表项
+
+```dart
+ListView(
+  children: <Widget>[
+    ListTile(
+      leading: Icon(Icons.star),
+      title: Text('Item 1'),
+      subtitle: Text('Subtitle for Item 1'),
+      trailing: Icon(Icons.arrow_forward),
+      onTap: () {
+        // Do something when item is tapped
+      },
+    ),
+    ListTile(
+      leading: Icon(Icons.star),
+      title: Text('Item 2'),
+      subtitle: Text('Subtitle for Item 2'),
+      trailing: Icon(Icons.arrow_forward),
+      onTap: () {
+        // Do something when item is tapped
+      },
+    ),
+    // Add more ListTiles...
+  ],
+)
+```
+
+在上面的示例中，每个 ListTile 包含一个图标、主要标题、子标题和尾部图标，点击列表项时执行相应的操作。

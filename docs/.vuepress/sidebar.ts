@@ -233,6 +233,8 @@ export const sidebarZh: SidebarConfig = {
       children: [
         '/flutter/widget/',
         '/flutter/widget/组件导航.md',
+        '/flutter/widget/路由导航.md',
+
         {
           text: '基础组件',
           collapsible: true,
@@ -323,6 +325,45 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/动画组件/SizeTransition.md',
             '/flutter/widget/动画组件/SlideTransition.md',
             '/flutter/widget/动画组件/Transform.md',
+          ]
+        },
+        {
+          text: '手势组件',
+          collapsible: true,
+          children:[
+            '/flutter/widget/手势组件/index.md',
+            '/flutter/widget/手势组件/Dismissible.md',
+            '/flutter/widget/手势组件/InkWell.md',
+            '/flutter/widget/手势组件/Draggable.md',
+            '/flutter/widget/手势组件/DragTarget.md',
+            '/flutter/widget/手势组件/GestureDetector.md',
+            '/flutter/widget/手势组件/LongPressDraggable.md',
+            '/flutter/widget/手势组件/DraggableScrollableSheet.md',
+            '/flutter/widget/手势组件/InteractiveViewer.md',
+            '/flutter/widget/手势组件/Listener.md',// 
+            '/flutter/widget/手势组件/RawGestureDetector.md',
+          ]
+        },
+        {
+          text: '其他组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/其他组件/Checkbox.md',
+            '/flutter/widget/其他组件/CheckboxListTile.md',//
+            '/flutter/widget/其他组件/Switch.md',
+            '/flutter/widget/其他组件/Slider.md',
+            '/flutter/widget/其他组件/Chip.md',//
+            '/flutter/widget/其他组件/DataTable.md',//
+            '/flutter/widget/其他组件/DatePicker.md',//
+            '/flutter/widget/其他组件/Dialog.md',//
+            '/flutter/widget/其他组件/Divider.md',//
+            '/flutter/widget/其他组件/Drawer.md',//
+            '/flutter/widget/其他组件/ExpansionPanel.md',//
+            '/flutter/widget/其他组件/ExpansionTile.md',//
+            '/flutter/widget/其他组件/FadeInImage.md',//
+            '/flutter/widget/其他组件/FlexibleSpaceBar.md',
+            '/flutter/widget/其他组件/SliverFillRemaining.md',
+            '/flutter/widget/其他组件/ListTile.md',
           ]
         }
       ]
