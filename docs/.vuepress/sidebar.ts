@@ -227,13 +227,20 @@ export const sidebarZh: SidebarConfig = {
     // },
   ],
   '/flutter/': [
+    '/flutter/路由导航.md',
+    {
+      text: 'Dart',
+      collapsible: true,
+      children: [
+        '/flutter/dart/',
+      ]
+    },
     {
       text: 'widget',
       collapsible: true,
       children: [
         '/flutter/widget/',
         '/flutter/widget/组件导航.md',
-        '/flutter/widget/路由导航.md',
 
         {
           text: '基础组件',
@@ -348,6 +355,9 @@ export const sidebarZh: SidebarConfig = {
           text: '其他组件',
           collapsible: true,
           children: [
+            '/flutter/widget/其他组件/Canvas.md',
+            '/flutter/widget/其他组件/CustomPaint.md',
+
             '/flutter/widget/其他组件/Checkbox.md',
             '/flutter/widget/其他组件/CheckboxListTile.md',//
             '/flutter/widget/其他组件/Switch.md',
