@@ -347,7 +347,7 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/手势组件/LongPressDraggable.md',
             '/flutter/widget/手势组件/DraggableScrollableSheet.md',
             '/flutter/widget/手势组件/InteractiveViewer.md',
-            '/flutter/widget/手势组件/Listener.md',// 
+            '/flutter/widget/手势组件/Listener.md',
             '/flutter/widget/手势组件/RawGestureDetector.md',
           ]
         },
