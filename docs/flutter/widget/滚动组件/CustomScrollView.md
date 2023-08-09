@@ -8,15 +8,46 @@ CustomScrollView 是 Flutter 中的一个强大的滚动容器，它可以包含
 ## 用法
 
 ```dart
-CustomScrollView(
-  slivers: <Widget>[],
-)
+  const CustomScrollView({
+    super.key,
+    super.scrollDirection,
+    super.reverse,
+    super.controller,
+    super.primary,
+    super.physics,
+    super.scrollBehavior,
+    super.shrinkWrap,
+    super.center,
+    super.anchor,
+    super.cacheExtent,
+    this.slivers = const <Widget>[],
+    super.semanticChildCount,
+    super.dragStartBehavior,
+    super.keyboardDismissBehavior,
+    super.restorationId,
+    super.clipBehavior,
+  });
 ```
 
 ## 属性及功能
 
-1. slivers`（List<Widget>）`：滚动视图列表。
-功能：设置包含在 CustomScrollView 中的滚动视图组件，如 SliverAppBar、SliverList、SliverGrid 等。
+- key: 用于在构建和更新元素时标识此组件。
+- scrollDirection: 指定滚动方向，可以是 Axis.vertical（垂直滚动）或 Axis.horizontal（水平滚动）。
+- reverse: 布尔值，决定滚动是否是反向的，当值为 true 时，滚动方向将相反。
+- controller: 指定滚动控制器，允许您手动控制滚动位置和监听滚动事件。
+- primary: 布尔值，当此滚动视图嵌套在另一个滚动视图中时，用于指示此滚动视图是否应该作为主滚动视图。
+- physics: 指定滚动物理效果，例如滚动的回弹行为，可以选择 ScrollPhysics 类的实例。
+- scrollBehavior: 指定滚动行为，通常用于决定在滚动视图中滚动到某个位置时的动画效果。
+- shrinkWrap: 布尔值，决定滚动视图是否应该根据其内容来调整大小，通常用于包裹较小的部分。
+- center: bool，决定在滚动到边界时是否保持子组件在视图中心。
+- anchor: 决定滚动视图中的锚点位置，默认值为 0.0，取值范围在 0.0 到 1.0 之间。
+- cacheExtent: 指定预加载的缓存区域，用于提前渲染一定范围内的子组件。
+- slivers: `List<Widget>`，这是一个包含不同类型的 Sliver 的列表，用于构建滚动视图的内容。
+- semanticChildCount: 用于指定可访问性信息，表示子元素的数量。
+- dragStartBehavior: 用于控制滚动操作的触发行为，例如在嵌套滚动时如何处理滚动手势。
+- keyboardDismissBehavior: 决定当用户点击键盘以外的区域时，是否自动关闭键盘。
+- restorationId: 用于状态恢复，指定此滚动视图的恢复标识符。
+- clipBehavior: 决定滚动视图是否应该剪切其子组件，以防止溢出。
 
 ## 使用场景
 
