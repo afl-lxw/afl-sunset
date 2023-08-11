@@ -106,6 +106,121 @@
   })
 ```
 
+`InputDecoration` 属性如下
+
+```dart
+const InputDecoration(
+  // 输入框前面显示的图标
+  icon: Icon(Icons.person),
+  // 图标的颜色
+  iconColor: Colors.blue,
+  // 整个输入框的标签
+  label: Text('Full Name'),
+  // 标签的文本内容
+  labelText: 'Full Name',
+  // 标签的样式
+  labelStyle: TextStyle(color: Colors.green),
+  // 浮动标签的样式
+  floatingLabelStyle: TextStyle(color: Colors.orange),
+  // 输入框的帮助文本
+  helperText: 'Please enter your full name',
+  // 帮助文本的样式
+  helperStyle: TextStyle(color: Colors.grey),
+  // 帮助文本的最大行数
+  helperMaxLines: 2,
+  // 输入框中的提示文本
+  hintText: 'John Doe',
+  // 提示文本的样式
+  hintStyle: TextStyle(color: Colors.grey),
+  // 提示文本的方向
+  hintTextDirection: TextDirection.ltr,
+  // 提示文本的最大行数
+  hintMaxLines: 1,
+  // 输入框的错误文本
+  errorText: 'Please enter a valid name',
+  // 错误文本的样式
+  errorStyle: TextStyle(color: Colors.red),
+  // 错误文本的最大行数
+  errorMaxLines: 1,
+  // 浮动标签的显示行为
+  floatingLabelBehavior: FloatingLabelBehavior.auto,
+  // 浮动标签的对齐方式
+  floatingLabelAlignment: Alignment.center,
+  // 是否将输入框的高度收缩为单行的高度
+  isCollapsed: false,
+  // 是否将输入框设置为紧凑模式
+  isDense: false,
+  // 输入框的内边距
+  contentPadding: EdgeInsets.all(8),
+  // 输入框前缀的图标
+  prefixIcon: Icon(Icons.person),
+  // 输入框前缀的约束
+  prefixIconConstraints: BoxConstraints.tightFor(height: 20),
+  // 输入框前缀的小部件
+  prefix: Text('Name:'),
+  // 输入框前缀的文本内容
+  prefixText: 'Name:',
+  // 前缀文本的样式
+  prefixStyle: TextStyle(fontWeight: FontWeight.bold),
+  // 前缀图标的颜色
+  prefixIconColor: Colors.blue,
+  // 输入框后缀的图标
+  suffixIcon: Icon(Icons.check),
+  // 输入框后缀的小部件
+  suffix: Text('Verified'),
+  // 输入框后缀的文本内容
+  suffixText: 'Verified',
+  // 后缀文本的样式
+  suffixStyle: TextStyle(color: Colors.green),
+  // 后缀图标的颜色
+  suffixIconColor: Colors.green,
+  // 输入框的计数器小部件
+  counter: Text('0/50'),
+  // 输入框的计数器文本内容
+  counterText: '0/50',
+  // 计数器文本的样式
+  counterStyle: TextStyle(color: Colors.grey),
+  // 是否为输入框提供填充背景
+  filled: true,
+  // 填充背景的颜色
+  fillColor: Colors.grey[200],
+  // 输入框获取焦点时的颜色
+  focusColor: Colors.blue,
+  // 鼠标悬停在输入框上方时的颜色
+  hoverColor: Colors.blue[100],
+  // 输入框在出现错误时的边框样式
+  errorBorder: UnderlineInputBorder(
+    borderSide: BorderSide(color: Colors.red),
+  ),
+  // 输入框在获取焦点时的边框样式
+  focusedBorder: UnderlineInputBorder(
+    borderSide: BorderSide(color: Colors.blue),
+  ),
+  // 输入框在获取焦点且出现错误时的边框样式
+  focusedErrorBorder: UnderlineInputBorder(
+    borderSide: BorderSide(color: Colors.red),
+  ),
+  // 输入框禁用时的边框样式
+  disabledBorder: UnderlineInputBorder(
+    borderSide: BorderSide(color: Colors.grey),
+  ),
+  // 输入框启用时的边框样式
+  enabledBorder: UnderlineInputBorder(
+    borderSide: BorderSide(color: Colors.grey),
+  ),
+  // 输入框默认的边框样式
+  border: UnderlineInputBorder(),
+  // 是否启用输入框
+  enabled: true,
+  // 用于辅助技术的计数器文本
+  semanticCounterText: 'characters',
+  // 是否将标签与提示文本对齐
+  alignLabelWithHint: false,
+  // 输入框的约束
+  constraints: BoxConstraints(maxHeight: 100),
+)
+```
+
 ## 注意事项
 
 当需要监听文本变化时，可以使用 controller 的 addListener 方法，而不仅仅是使用 onChanged 回调。
