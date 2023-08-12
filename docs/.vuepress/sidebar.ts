@@ -273,6 +273,32 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/滚动组件/Scrollbar.md',
             '/flutter/widget/滚动组件/ScrollConfiguration.md',
             '/flutter/widget/滚动组件/AnimatedList.md',
+          ]
+        },
+        {
+          text: 'Sliver组件',
+          collapsible: true,
+          children: [
+            '/flutter/widget/Sliver组件/',
+            '/flutter/widget/Sliver组件/SliverAppBar.md',
+            '/flutter/widget/Sliver组件/SliverList.md',
+            '/flutter/widget/Sliver组件/SliverGrid.md',
+            '/flutter/widget/Sliver组件/SliverPadding.md',
+            '/flutter/widget/Sliver组件/SliverAnimatedOpacity.md',
+            '/flutter/widget/Sliver组件/SliverAnimatedList.md',
+            '/flutter/widget/Sliver组件/SliverToBoxAdapter.md',
+            '/flutter/widget/Sliver组件/SliverFillViewport.md',
+
+            '/flutter/widget/Sliver组件/SliverFixedExtentList.md',
+            '/flutter/widget/Sliver组件/SliverFillRemaining.md',
+            '/flutter/widget/Sliver组件/SliverPersistentHeader.md',
+            '/flutter/widget/Sliver组件/SliverPrototypeExtentList.md',
+            '/flutter/widget/Sliver组件/SliverOpacity.md',
+            '/flutter/widget/Sliver组件/SliverIgnorePointer.md',
+            '/flutter/widget/Sliver组件/SliverOverlapInjector.md',
+            '/flutter/widget/Sliver组件/SliverOverlapAbsorber.md',
+            '/flutter/widget/Sliver组件/SliverAnimatedPadding.md',
+            '/flutter/widget/Sliver组件/SliverAnimatedPositioned.md',
 
           ]
         },
@@ -357,7 +383,7 @@ export const sidebarZh: SidebarConfig = {
           children: [
             '/flutter/widget/其他组件/Canvas.md',
             '/flutter/widget/其他组件/CustomPaint.md',
-
+            '/flutter/widget/其他组件/BackdropFilter.md',
             '/flutter/widget/其他组件/Checkbox.md',
             '/flutter/widget/其他组件/CheckboxListTile.md',//
             '/flutter/widget/其他组件/Switch.md',
@@ -398,6 +424,14 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/GetX/',
       ]
     },
+    {
+      text: 'provider',
+      collapsible: true,
+      children: [
+        '/flutter/provider/',
+      ]
+    },
+    
   ],
   '/docMD/git/': [
     '/docMD/git/版本控制',
