@@ -459,7 +459,6 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/controller/ScrollActivity.md',
         '/flutter/controller/ScrollDragController.md',
         '/flutter/controller/ScrollActivityDelegate.md',
-        '/flutter/controller/ScrollPositionWithSingleContext.md',
         '/flutter/controller/StreamBuilder.md',
         '/flutter/controller/StreamController.md',
         '/flutter/controller/StreamSubscription.md',
