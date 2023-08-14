@@ -448,7 +448,7 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/controller/ScrollController.md',
         '/flutter/controller/TabController.md',
         '/flutter/controller/FocusManager.md',
-        '/flutter/controller/AnimationController.md',
+        // '/flutter/controller/AnimationController.md',
         '/flutter/controller/Future.md',
         '/flutter/controller/ScrollNotification.md',
         '/flutter/controller/ScrollPosition.md',
