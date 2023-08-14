@@ -288,7 +288,7 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/Sliver组件/SliverAnimatedList.md',
             '/flutter/widget/Sliver组件/SliverToBoxAdapter.md',
             '/flutter/widget/Sliver组件/SliverFillViewport.md',
-
+            '/flutter/widget/Sliver组件/sliverChildBuilderDelegate.md',
             '/flutter/widget/Sliver组件/SliverFixedExtentList.md',
             '/flutter/widget/Sliver组件/SliverFillRemaining.md',
             '/flutter/widget/Sliver组件/SliverPersistentHeader.md',
@@ -378,6 +378,29 @@ export const sidebarZh: SidebarConfig = {
           ]
         },
         {
+          text: '导航和路由Widget',
+          collapsible: true,
+          children: [
+            '/flutter/widget/导航和路由Widget/index.md',
+   
+          ]
+        },
+        {
+          text: '画布和绘图Widget',
+          collapsible: true,
+          children: [
+            '/flutter/widget/画布和绘图Widget/index.md',
+
+          ]
+        },
+        {
+          text: '样式Widget',
+          collapsible: true,
+          children: [
+            '/flutter/widget/样式Widget/index.md',
+          ]
+        },
+        {
           text: '其他组件',
           collapsible: true,
           children: [
@@ -415,6 +438,35 @@ export const sidebarZh: SidebarConfig = {
         '/flutter/Animation/CupertinoPageRoute.md',
         '/flutter/Animation/CurvedAnimation.md',
 
+      ]
+    },
+    {
+      text: 'controller',
+      collapsible: true,
+      children: [
+        '/flutter/controller/',
+        '/flutter/controller/ScrollController.md',
+        '/flutter/controller/TabController.md',
+        '/flutter/controller/FocusManager.md',
+        '/flutter/controller/AnimationController.md',
+        '/flutter/controller/Future.md',
+        '/flutter/controller/ScrollNotification.md',
+        '/flutter/controller/ScrollPosition.md',
+        '/flutter/controller/ScrollPhysics.md',
+        '/flutter/controller/ScrollMetrics.md',
+        '/flutter/controller/ScrollIncrementDetails.md',
+        '/flutter/controller/ScrollHoldController.md',
+        '/flutter/controller/ScrollActivity.md',
+        '/flutter/controller/ScrollDragController.md',
+        '/flutter/controller/ScrollActivityDelegate.md',
+        '/flutter/controller/ScrollPositionWithSingleContext.md',
+        '/flutter/controller/StreamBuilder.md',
+        '/flutter/controller/StreamController.md',
+        '/flutter/controller/StreamSubscription.md',
+        '/flutter/controller/TabBarView.md',
+        '/flutter/controller/ValueNotifier.md',
+        '/flutter/controller/ValueListenableBuilder.md',
+        '/flutter/controller/ValueListenable.md',
       ]
     },
     {
