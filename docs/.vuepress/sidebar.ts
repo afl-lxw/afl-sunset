@@ -233,6 +233,12 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/flutter/dart/',
+        '/flutter/dart/数据类型.md',
+        '/flutter/dart/变量定义.md',
+        '/flutter/dart/class.md',
+        '/flutter/dart/list.md',
+        '/flutter/dart/map.md',
+
       ]
     },
     {
