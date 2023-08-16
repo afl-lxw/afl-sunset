@@ -4,20 +4,28 @@ BottomNavigationBar 是一个用于创建底部导航栏的组件，用于在应
 
 ## 属性列表
 
-- items: 必需属性，用于定义底部导航栏的每个导航项，是一个包含 BottomNavigationBarItem 的列表。
-- onTap: 当用户点击导航项时触发的回调函数，参数为点击的导航项的索引。
-- currentIndex: 当前选中的导航项的索引，与 onTap 结合使用以跟踪用户的选择。
-- elevation: 导航栏的阴影，可以控制底部导航栏的投影高度。
+- key: 组件的唯一标识，用于控制组件的状态和刷新。
+- items: 必需属性，定义底部导航栏的每个导航项。是一个 BottomNavigationBarItem 对象的列表，用于指定每个导航项的图标、标签等信息。
+- onTap: 当用户点击导航项时触发的回调函数，该函数接收一个 int 类型参数，表示点击的导航项的索引。
+- currentIndex: 当前选中的导航项的索引，默认为 0。
+- elevation: 导航栏的阴影高度，用于创建底部导航栏的投影效果。
+- type: 导航栏的类型，可以是 BottomNavigationBarType.fixed（固定类型）或 BottomNavigationBarType.shifting（滑动类型）。
+- fixedColor: 固定模式下选中的导航项图标和文本的颜色。
 - backgroundColor: 导航栏的背景颜色。
 - iconSize: 导航项中图标的大小。
-- fixedColor: 选中的导航项图标和文本的颜色，当 type 为 BottomNavigationBarType.fixed 时生效。
-- unselectedItemColor: 未选中的导航项图标和文本的颜色，当 type 为 BottomNavigationBarType.fixed 时生效。
-- selectedItemColor: 选中的导航项图标和文本的颜色，当 type 为 BottomNavigationBarType.shifting 时生效。
+- selectedItemColor: 选中的导航项图标和文本的颜色。
+- unselectedItemColor: 未选中的导航项图标和文本的颜色。
+- selectedIconTheme: 选中的导航项图标的主题样式。
+- unselectedIconTheme: 未选中的导航项图标的主题样式。
 - selectedFontSize: 选中的导航项文本的字体大小。
 - unselectedFontSize: 未选中的导航项文本的字体大小。
 - selectedLabelStyle: 选中的导航项文本的样式。
 - unselectedLabelStyle: 未选中的导航项文本的样式。
-- type: 导航栏的类型，可以是 BottomNavigationBarType.fixed（固定类型）或 BottomNavigationBarType.shifting（滑动类型）。
+- showSelectedLabels: 是否显示选中的导航项的文本。
+- showUnselectedLabels: 是否显示未选中的导航项的文本。
+- mouseCursor: 鼠标悬停时的光标形状。
+- enableFeedback: 是否启用触觉反馈。
+- landscapeLayout: 导航栏在横屏模式下的布局样式。
 
 ## 用法和功能
 
