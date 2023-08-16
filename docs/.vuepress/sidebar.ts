@@ -413,6 +413,8 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/其他组件/Canvas.md',
             '/flutter/widget/其他组件/CustomPaint.md',
             '/flutter/widget/其他组件/BackdropFilter.md',
+            '/flutter/widget/其他组件/ColorFiltered.md',
+
             '/flutter/widget/其他组件/Checkbox.md',
             '/flutter/widget/其他组件/CheckboxListTile.md',//
             '/flutter/widget/其他组件/Switch.md',
