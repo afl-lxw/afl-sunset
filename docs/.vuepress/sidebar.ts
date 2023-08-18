@@ -415,6 +415,7 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/其他组件/BackdropFilter.md',
             '/flutter/widget/其他组件/ColorFiltered.md',
             '/flutter/widget/其他组件/BottomNavigationBar.md',
+            '/flutter/widget/其他组件/ClipRect.md',
 
             '/flutter/widget/其他组件/Checkbox.md',
             '/flutter/widget/其他组件/CheckboxListTile.md',//
