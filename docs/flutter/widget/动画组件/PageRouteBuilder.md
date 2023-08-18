@@ -25,10 +25,17 @@ PageRouteBuilder 是 Flutter 中用于自定义页面切换动画的组件。通
 
 PageRouteBuilder 的主要属性及其功能：
 
-- pageBuilder：构建页面内容的函数，通常返回一个 Widget。
-- transitionDuration：过渡动画的持续时间。
-- reverseTransitionDuration：反向过渡动画的持续时间。
-- transitionsBuilder：自定义过渡动画的函数，通常返回一个 Widget，可以使用 BuildContext、`Animation<double>` 等参数。
+- settings: 路由的设置，用于传递一些路由的元数据，通常是 RouteSettings 类型的对象。
+- pageBuilder: 一个必需的回调函数，用于构建要过渡到的新页面的内容。该回调应返回一个 Widget，通常是你要显示的页面的主体内容。
+- transitionsBuilder: 一个回调函数，用于构建页面过渡动画。默认情况下，transitionsBuilder 使用 _defaultTransitionsBuilder 函数来创建过渡效果，但你可以自定义该回调来创建你自己的过渡效果。
+- transitionDuration: 指定页面过渡动画的持续时间，即新页面进入屏幕的时间。通常使用 Duration 类型来表示，单位是毫秒。
+- reverseTransitionDuration: 指定反向页面过渡动画的持续时间，即新页面退出屏幕的时间。通常与 transitionDuration 相同。
+- opaque: 布尔值，表示过渡期间的页面是否是不透明的。如果设置为 true，则页面会在过渡期间完全覆盖底部的页面，否则会透出底部的页面。
+- barrierDismissible: 布尔值，表示是否允许用户通过点击屏幕以外的区域来取消该路由。默认为 false。
+- barrierColor: 设置背景色，用于实现一些半透明的效果，通常用于遮罩效果。
+- barrierLabel: 用于描述页面过渡的标签，通常用于调试和分析。
+- maintainState: 布尔值，表示当页面切换时是否保留状态。如果设置为 true，则在切换页面时保留页面的状态，否则不保留。
+- fullscreenDialog: 布尔值，表示该路由是否是一个全屏的对话框。默认为 false，如果设置为 true，则路由会覆盖整个屏幕，并且具有对话框的样式。
 
 ## 用法
 
