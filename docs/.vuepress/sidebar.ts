@@ -438,6 +438,27 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
     {
+      text: 'widget基础类',
+      collapsible: true,
+      children: [
+        '/flutter/widget基础类/',
+        '/flutter/widget基础类/AutomaticKeepAliveClientMixin.md',
+        '/flutter/widget基础类/ChangeNotifier.md',
+        '/flutter/widget基础类/FocusManager.md',
+        '/flutter/widget基础类/GestureRecognizer.md',
+        '/flutter/widget基础类/NotificationListener.md',
+        '/flutter/widget基础类/RefreshIndicatorState.md',
+        '/flutter/widget基础类/RestorableProperty.md',
+        '/flutter/widget基础类/RestorableState.md',
+        '/flutter/widget基础类/RouteAware.md',
+        '/flutter/widget基础类/SingleTickerProviderStateMixin.md',
+        '/flutter/widget基础类/TickerProviderStateMixin.md',
+        '/flutter/widget基础类/WidgetsBindingObserver.md',
+        '/flutter/widget基础类/WidgetsLocalizationsDelegate.md',
+
+      ]
+    },
+    {
       text: 'Animation类',
       collapsible: true,
       children: [
