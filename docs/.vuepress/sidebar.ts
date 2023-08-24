@@ -206,6 +206,13 @@ export const sidebarZh: SidebarConfig = {
         '/service/go/',
       ]
     },
+    {
+      text: 'Gin',
+      collapsible: true,
+      children: [
+        '/service/go/gin/',
+      ]
+    },
   ],
   '/service/docker/': [
     {
