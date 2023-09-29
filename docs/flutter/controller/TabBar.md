@@ -35,7 +35,7 @@
 
 TabBar 提供了一个水平排列的选项卡栏，用于显示不同的选项卡。通过与 TabBarView 配合使用，可以实现选项卡导航，让用户在不同选项卡之间切换内容。
 
-- required this.tabs（List<Widget>）：用于指定每个选项卡的小部件列表，这些小部件将显示在TabBar中。
+- required `this.tabs（List<Widget>）`：用于指定每个选项卡的小部件列表，这些小部件将显示在TabBar中。
 - this.controller（TabController? controller）：用于控制选项卡的选择和滚动位置。通常，您可以将一个TabController与DefaultTabController一起使用来自动创建和管理。
 - this.isScrollable（bool isScrollable = false）：控制选项卡是否可以水平滚动。如果为true，则选项卡可以在水平方向上滚动，适用于大量选项卡的情况。
 - this.padding（EdgeInsetsGeometry? padding）：用于指定TabBar小部件的内边距。
@@ -52,10 +52,10 @@ TabBar 提供了一个水平排列的选项卡栏，用于显示不同的选项�
 - this.unselectedLabelColor（Color? unselectedLabelColor）：用于指定未选中选项卡标签的文本颜色。
 - this.unselectedLabelStyle（TextStyle? unselectedLabelStyle）：用于指定未选中选项卡标签的文本样式。
 - this.dragStartBehavior（DragStartBehavior dragStartBehavior = DragStartBehavior.start）：用于指定开始拖动手势的行为。通常使用DragStartBehavior.start以在触摸点开始拖动。
-- this.overlayColor（MaterialStateProperty<Color?>? overlayColor）：用于指定选项卡的叠加颜色，可以根据选项卡的状态来更改颜色。
+- `this.overlayColor（MaterialStateProperty<Color?>? overlayColor）`：用于指定选项卡的叠加颜色，可以根据选项卡的状态来更改颜色。
 - this.mouseCursor（MouseCursor? mouseCursor）：用于指定指针悬停在选项卡上时的光标形状。
 - this.enableFeedback（bool? enableFeedback）：控制是否启用触觉反馈（例如振动）。
-- this.onTap（ValueChanged<int>? onTap）：当用户点击选项卡时调用的回调函数，参数为选项卡的索引。
+- `this.onTap（ValueChanged<int>? onTap）`：当用户点击选项卡时调用的回调函数，参数为选项卡的索引。
 - this.physics（ScrollPhysics? physics）：用于指定选项卡滚动的物理效果，例如滚动速度和
 
 ## 使用场景
