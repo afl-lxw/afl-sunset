@@ -4,39 +4,59 @@
 
 ## 属性和方法
 
-- tabs: 一个包含选项卡的列表，每个选项卡通常是一个 Tab 对象。
-- controller: 与 TabController 对象关联，用于控制选项卡的切换。
-- isScrollable: 决定选项卡是否可以滚动。
-- indicatorColor: 选项卡指示器的颜色。
-- indicatorWeight: 选项卡指示器的宽度。
-- indicatorPadding: 选项卡指示器的内边距。
-- indicator: 自定义选项卡指示器。
-- indicatorSize: 选项卡指示器的尺寸。
-- labelColor: 选项卡选中状态下标签的颜色。
-- labelStyle: 选项卡选中状态下标签的样式。
-- unselectedLabelColor: 选项卡未选中状态下标签的颜色。
-- unselectedLabelStyle: 选项卡未选中状态下标签的样式。
-- dragStartBehavior: 定义用户在哪里开始拖动。
+- super.key,
+- required this.tabs,
+- this.controller,
+- this.isScrollable = false,
+- this.padding,
+- this.indicatorColor,
+- this.automaticIndicatorColorAdjustment = true,
+- this.indicatorWeight = 2.0,
+- this.indicatorPadding = EdgeInsets.zero,
+- this.indicator,
+- this.indicatorSize,
+- this.dividerColor,
+- this.labelColor,
+- this.labelStyle,
+- this.labelPadding,
+- this.unselectedLabelColor,
+- this.unselectedLabelStyle,
+- this.dragStartBehavior = DragStartBehavior.start,
+- this.overlayColor,
+- this.mouseCursor,
+- this.enableFeedback,
+- this.onTap,
+- this.physics,
+- this.splashFactory,
+- this.splashBorderRadius,
+- this.tabAlignment,
 
 ## 功能和用法
 
 TabBar 提供了一个水平排列的选项卡栏，用于显示不同的选项卡。通过与 TabBarView 配合使用，可以实现选项卡导航，让用户在不同选项卡之间切换内容。
 
-- tabs（`List<Widget>`）：用于指定每个选项卡的小部件列表。
-- controller（TabController）： 用于控制选项卡的选择和滚动位置。通常，您需要使用DefaultTabController来自动创建并管理TabController。
-- isScrollable（bool）：控制选项卡是否可以水平滚动。如果为true，则选项卡可以在水平方向上滚动，适用于大量选项卡的情况。
-- indicatorColor（Color）：用于指定选中选项卡下方指示器的颜色。
-- indicatorWeight（double）：用于指定选中选项卡下方指示器的高度。
-- indicatorPadding（EdgeInsetsGeometry）：用于指定选中选项卡下方指示器的内边距。
-- indicatorSize（TabBarIndicatorSize）：枚举类型，用于指定选中选项卡下方指示器的大小。可以是TabBarIndicatorSize.tab（与选项卡一样宽）或TabBarIndicatorSize.label（与选项卡标签的宽度一样）。
-- labelColor（Color）：用于指定选中选项卡标签的文本颜色。
-- unselectedLabelColor（Color）：用于指定未选中选项卡标签的文本颜色。
-- labelStyle（TextStyle）：用于指定选中选项卡标签的文本样式。
-- unselectedLabelStyle（TextStyle）：用于指定未选中选项卡标签的文本样式。
-- labelPadding（EdgeInsetsGeometry）：用于指定选项卡标签的内边距。
-- dragStartBehavior（DragStartBehavior）：枚举类型，指定开始拖动手势的行为。通常使用DragStartBehavior.start以在触摸点开始拖动。
-- onTap（void Function(int index)）：当用户点击选项卡时调用的回调函数，参数为选项卡的索引。
-- physics（ScrollPhysics）：用于指定选项卡滚动的物理效果，例如滚动速度和边界效应。
+- required this.tabs（List<Widget>）：用于指定每个选项卡的小部件列表，这些小部件将显示在TabBar中。
+- this.controller（TabController? controller）：用于控制选项卡的选择和滚动位置。通常，您可以将一个TabController与DefaultTabController一起使用来自动创建和管理。
+- this.isScrollable（bool isScrollable = false）：控制选项卡是否可以水平滚动。如果为true，则选项卡可以在水平方向上滚动，适用于大量选项卡的情况。
+- this.padding（EdgeInsetsGeometry? padding）：用于指定TabBar小部件的内边距。
+- this.indicatorColor（Color? indicatorColor）：用于指定选中选项卡下方指示器的颜色。
+- this.automaticIndicatorColorAdjustment（bool automaticIndicatorColorAdjustment = true）：控制是否根据indicatorColor自动调整选项卡标签的文本颜色以保持对比度。
+- this.indicatorWeight（double indicatorWeight = 2.0）：用于指定选中选项卡下方指示器的高度。
+- this.indicatorPadding（EdgeInsetsGeometry indicatorPadding = EdgeInsets.zero）：用于指定选中选项卡下方指示器的内边距。
+- this.indicator（Decoration? indicator）：用于指定自定义的选中选项卡下方指示器的装饰。
+- this.indicatorSize（TabBarIndicatorSize? indicatorSize）：用于指定选中选项卡下方指示器的大小，可以是TabBarIndicatorSize.tab或TabBarIndicatorSize.label。
+- this.dividerColor（Color? dividerColor）：用于指定选项卡之间的分隔线颜色。
+- this.labelColor（Color? labelColor）：用于指定选中选项卡标签的文本颜色。
+- this.labelStyle（TextStyle? labelStyle）：用于指定选中选项卡标签的文本样式。
+- this.labelPadding（EdgeInsetsGeometry? labelPadding）：用于指定选项卡标签的内边距。
+- this.unselectedLabelColor（Color? unselectedLabelColor）：用于指定未选中选项卡标签的文本颜色。
+- this.unselectedLabelStyle（TextStyle? unselectedLabelStyle）：用于指定未选中选项卡标签的文本样式。
+- this.dragStartBehavior（DragStartBehavior dragStartBehavior = DragStartBehavior.start）：用于指定开始拖动手势的行为。通常使用DragStartBehavior.start以在触摸点开始拖动。
+- this.overlayColor（MaterialStateProperty<Color?>? overlayColor）：用于指定选项卡的叠加颜色，可以根据选项卡的状态来更改颜色。
+- this.mouseCursor（MouseCursor? mouseCursor）：用于指定指针悬停在选项卡上时的光标形状。
+- this.enableFeedback（bool? enableFeedback）：控制是否启用触觉反馈（例如振动）。
+- this.onTap（ValueChanged<int>? onTap）：当用户点击选项卡时调用的回调函数，参数为选项卡的索引。
+- this.physics（ScrollPhysics? physics）：用于指定选项卡滚动的物理效果，例如滚动速度和
 
 ## 使用场景
 
