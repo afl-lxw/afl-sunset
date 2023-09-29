@@ -22,6 +22,22 @@
 
 TabBar 提供了一个水平排列的选项卡栏，用于显示不同的选项卡。通过与 TabBarView 配合使用，可以实现选项卡导航，让用户在不同选项卡之间切换内容。
 
+- tabs（`List<Widget>`）：用于指定每个选项卡的小部件列表。
+- controller（TabController）： 用于控制选项卡的选择和滚动位置。通常，您需要使用DefaultTabController来自动创建并管理TabController。
+- isScrollable（bool）：控制选项卡是否可以水平滚动。如果为true，则选项卡可以在水平方向上滚动，适用于大量选项卡的情况。
+- indicatorColor（Color）：用于指定选中选项卡下方指示器的颜色。
+- indicatorWeight（double）：用于指定选中选项卡下方指示器的高度。
+- indicatorPadding（EdgeInsetsGeometry）：用于指定选中选项卡下方指示器的内边距。
+- indicatorSize（TabBarIndicatorSize）：枚举类型，用于指定选中选项卡下方指示器的大小。可以是TabBarIndicatorSize.tab（与选项卡一样宽）或TabBarIndicatorSize.label（与选项卡标签的宽度一样）。
+- labelColor（Color）：用于指定选中选项卡标签的文本颜色。
+- unselectedLabelColor（Color）：用于指定未选中选项卡标签的文本颜色。
+- labelStyle（TextStyle）：用于指定选中选项卡标签的文本样式。
+- unselectedLabelStyle（TextStyle）：用于指定未选中选项卡标签的文本样式。
+- labelPadding（EdgeInsetsGeometry）：用于指定选项卡标签的内边距。
+- dragStartBehavior（DragStartBehavior）：枚举类型，指定开始拖动手势的行为。通常使用DragStartBehavior.start以在触摸点开始拖动。
+- onTap（void Function(int index)）：当用户点击选项卡时调用的回调函数，参数为选项卡的索引。
+- physics（ScrollPhysics）：用于指定选项卡滚动的物理效果，例如滚动速度和边界效应。
+
 ## 使用场景
 
 - 选项卡导航：用于在不同的选项卡之间切换内容，例如顶部导航栏、底部导航栏等。
