@@ -1,0 +1,44 @@
+# Chewie
+
+> 首先先了解一下 ChewieController 有哪些可配置的属性
+
+- videoPlayerController：用于控制视频播放的 VideoPlayerController 对象。
+- optionsTranslation：翻译配置选项。
+- aspectRatio：视频的宽高比。
+- autoInitialize：是否自动初始化视频，通常与 autoPlay 一起使用。
+- autoPlay：是否在初始化后自动播放视频。
+- draggableProgressBar：是否允许用户拖动进度条。
+- startAt：指定视频从何处开始播放。
+- looping：是否循环播放视频。
+- fullScreenByDefault：是否默认全屏播放。
+- cupertinoProgressColors：Cupertino 风格的进度条颜色配置。
+- materialProgressColors：Material 风格的进度条颜色配置。
+- placeholder：视频加载前显示的占位图像。
+- overlay：覆盖在视频上的自定义控件。
+- showControlsOnInitialize：初始化时是否显示控制栏。
+- showOptions：是否显示选项按钮。
+- optionsBuilder：用于创建选项按钮的自定义构建器。
+- additionalOptions：额外的选项按钮。
+- showControls：是否显示控制栏。
+- transformationController：用于控制视频缩放和平移的 transformationController。
+- zoomAndPan：是否启用视频缩放和平移功能。
+- maxScale：视频的最大缩放比例。
+- subtitle：视频字幕。
+- subtitleBuilder：用于创建字幕显示的自定义构建器。
+- customControls：自定义控制栏。
+- errorBuilder：用于创建错误消息显示的自定义构建器。
+- allowedScreenSleep：是否允许屏幕进入睡眠模式。
+- isLive：是否显示为直播流。
+- allowFullScreen：是否允许全屏播放。
+- allowMuting：是否允许静音。
+- allowPlaybackSpeedChanging：是否允许改变播放速度。
+- useRootNavigator：是否使用根导航器。
+- playbackSpeeds：支持的播放速度选项。
+- systemOverlaysOnEnterFullScreen：进入全屏模式时启用的系统覆盖选项。
+- deviceOrientationsOnEnterFullScreen：进入全屏模式时允许的设备方向。
+- systemOverlaysAfterFullScreen：退出全屏模式后恢复的系统覆盖选项。
+- deviceOrientationsAfterFullScreen：退出全屏模式后恢复的设备方向。
+- routePageBuilder：在进入全屏模式时自定义路由页面构建器。
+- progressIndicatorDelay：进度指示器的延迟显示时间。
+- hideControlsTimer：自动隐藏控制栏的计时器。
+- controlsSafeAreaMinimum：控制栏的最小安全区域。

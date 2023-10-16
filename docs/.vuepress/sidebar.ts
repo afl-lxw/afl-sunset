@@ -507,20 +507,33 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
     {
-      text: 'GetX',
+      text: 'package',
       collapsible: true,
       children: [
-        '/flutter/GetX/',
+        '/flutter/package/index',
+        {
+          text: 'getX',
+          collapsible: true,
+          children: [
+            '/flutter/package/getX/',
+          ]
+        },
+        {
+          text: 'provider',
+          collapsible: true,
+          children: [
+            '/flutter/package/provider/',
+          ]
+        },
+        {
+          text: 'chewie',
+          collapsible: true,
+          children: [
+            '/flutter/package/chewie/',
+          ]
+        },
       ]
     },
-    {
-      text: 'provider',
-      collapsible: true,
-      children: [
-        '/flutter/provider/',
-      ]
-    },
-    
   ],
   '/docMD/git/': [
     '/docMD/git/版本控制',
