@@ -532,6 +532,13 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/package/chewie/',
           ]
         },
+        {
+          text: 'infinite_scroll_pagination',
+          collapsible: true,
+          children: [
+            '/flutter/package/infinite_scroll_pagination/',
+          ]
+        },
       ]
     },
   ],
