@@ -4,14 +4,21 @@
 
 ## 属性
 
-- key (Key): 每个 Dismissible 需要一个唯一的 key，用于标识不同的 Dismissible。
-- child (Widget): 要显示的子组件，通常是列表项。
-- onDismissed (Function): 当用户将子组件滑出 Dismissible 区域时触发的回调函数。
-- background (Widget): 在子组件下方显示的背景组件，通常表示删除操作。
-- secondaryBackground (Widget): 在子组件上方显示的背景组件，通常表示其他操作。
-- confirmDismiss (ConfirmDismissCallback): 当用户试图滑出 Dismissible 区域时，用于确认是否执行删除操作。
-- direction (DismissDirection): 指定可滑动的方向，可以是 DismissDirection.horizontal、DismissDirection.vertical 或者 DismissDirection.endToStart、DismissDirection.startToEnd 等。
-- dragStartBehavior (DragStartBehavior): 指定如何处理拖动行为，例如 DragStartBehavior.down 表示只有在垂直方向上拖动时才触发。
+- key (Key): widget 的唯一标识符。
+- child (Widget): 将要被滑动的 Widget。
+- background (Widget): 滑动方向上的背景内容，通常用于删除或执行其他操作。
+- secondaryBackground (Widget): 如果指定了方向，则是另一侧的背景内容，可选，用于滑动另一方向的操作。
+- confirmDismiss (DismissDirectionCallback)?: 可选的回调函数，当尝试执行滑动时，它会检查是否确认滑动。
+- onResize (VoidCallback)?: 可选的回调函数，当 Dismissible 调整大小时触发。
+- onUpdate (`ValueChanged<Offset>`)?: 可选的回调函数，当 Dismissible 更新时触发。
+- onDismissed (DismissDirectionCallback)?: 滑动完成后的回调函数。
+- direction (DismissDirection): 可以滑动的方向，默认为水平方向。
+- resizeDuration (Duration): 执行调整大小的动画持续时间。
+- dismissThresholds (`Map<DismissDirection, double>`): 手指滑动的阈值，用于确定滑动是否触发删除，默认是 DismissDirection.horizontal。
+- movementDuration (Duration): 完成滑动所需的时间。
+- crossAxisEndOffset (double): 交叉轴（非滑动方向）的结束偏移量。
+- dragStartBehavior (DragStartBehavior): 拖动开始的行为，start 代表在按下时立即开始移动。
+- behavior (HitTestBehavior): 行为定义该组件如何响应命中测试，默认是 HitTestBehavior.opaque，这意味着它不允许通过它进行命中测试。
 
 ## 功能
 
