@@ -189,12 +189,40 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
+  "/tests/cypress/": [
+    {
+      text: 'cypress',
+      collapsible: true,
+      children: [
+        '/tests/cypress/',
+      ]
+    },
+  ],
+  "/tests/playwright/": [
+    {
+      text: 'playwright',
+      collapsible: true,
+      children: [
+        '/tests/playwright/',
+      ]
+    },
+  ],
+  // --------------------------------------------------------------
   '/service/node/': [
     {
       text: 'nodejs',
       collapsible: true,
       children: [
         '/service/node/',
+      ]
+    },
+  ],
+  '/service/rust/': [
+    {
+      text: 'Rust',
+      collapsible: true,
+      children: [
+        '/service/rust/',
       ]
     },
   ],
@@ -233,6 +261,17 @@ export const sidebarZh: SidebarConfig = {
     //   ]
     // },
   ],
+  '/service/mysql/': [
+    '/service/mysql/',
+  ],
+  '/service/elasticsearch/': [
+    '/service/elasticsearch/',
+  ],
+  '/service/redis/': [
+    '/service/redis/',
+  ],
+  // --------------------------------------------------------------
+
   '/flutter/': [
     '/flutter/路由导航.md',
     {
@@ -542,6 +581,12 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
   ],
+  '/reactNative/' :[
+    '/reactNative/',
+    '/reactNative/环境搭建.md',
+  ],
+  // --------------------------------------------------------------
+
   '/docMD/git/': [
     '/docMD/git/版本控制',
     '/docMD/git/分支新建与合并',
@@ -555,4 +600,7 @@ export const sidebarZh: SidebarConfig = {
   '/docMD/order/': [
     '/docMD/order/',
   ]
+
+
+  // =====================Deisgn=========================
 }

@@ -19,9 +19,19 @@ export const navbarZh: NavbarConfig = [
         ]
       },
       {
+        text: '集成测试',
+        children: [
+          { text: 'cypress', link: '/tests/cypress/' },
+          { text: 'playwright', link: '/tests/playwright/' },
+
+        ]
+      },
+      {
         text: '混合开发',
         children: [
           { text: 'Flutter', link: '/flutter/' },
+          { text: 'React Native', link: '/reactNative/' },
+
         ]
       },
     ]
@@ -31,12 +41,29 @@ export const navbarZh: NavbarConfig = [
     children: [
       { text: "Nodejs", link: '/service/node/' },
       { text: "Golang", link: '/service/go/' },
-      { text: "Docker", link: '/service/docker/' },
-      { text: "Mongodb", link: '/service/mongodb/' }
+      { text: "Rust", link: '/service/rust/' },
+      {
+        text: '服务',
+        children: [
+          { text: "Docker", link: '/service/docker/' },
+          { text: "Mongodb", link: '/service/mongodb/' },
+          { text: "Mysql", link: '/service/mysql/' },
+          { text: "Elasticsearch", link: '/service/elasticsearch/' },
+          { text: "Redias", link: '/service/redis/' },
+
+
+        ]
+      },
     ]
   },
   {
-    text: '文档',
+    text: 'Design',
+    children: [
+
+    ]
+  },
+  {
+    text: '归档',
     children: [
       {
         text: "有点意思",
@@ -50,7 +77,7 @@ export const navbarZh: NavbarConfig = [
           { text: "Mac", link: '/docMD/mac/' },
           { text: "Git", link: '/docMD/git/' },
         ]
-      }
+      },
     ]
   },
 ]
