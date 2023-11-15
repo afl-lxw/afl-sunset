@@ -578,6 +578,20 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/package/infinite_scroll_pagination/',
           ]
         },
+        {
+          text: 'music',
+          collapsible: true,
+          children: [
+            '/flutter/package/music/',
+          ]
+        },
+        {
+          text: 'video',
+          collapsible: true,
+          children: [
+            '/flutter/package/video/',
+          ]
+        },
       ]
     },
   ],
