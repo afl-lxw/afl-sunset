@@ -549,7 +549,7 @@ export const sidebarZh: SidebarConfig = {
       text: 'package',
       collapsible: true,
       children: [
-        '/flutter/package/index',
+        '/flutter/package/',
         {
           text: 'getX',
           collapsible: true,
