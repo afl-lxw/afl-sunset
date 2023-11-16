@@ -57,9 +57,34 @@ export const navbarZh: NavbarConfig = [
     ]
   },
   {
+    text: "Harmony",
+    children: [
+      {
+        text: "Ark",
+        children: [
+          { text: "ArkTs", link: '/harmony/ark/arkts/' },
+          { text: "ArkUI", link: '/harmony/ark/arkui/' },
+        ]
+      },
+      {
+        text: "Harmony OS",
+        children: [
+
+        ]
+      },
+    ]
+  },
+  {
     text: 'Design',
     children: [
+      {
+        text: "UI/UX",
+        children: [
+          { text: "UI", link: '/design/ui/' },
+          { text: "UX", link: '/design/ux/' },
 
+        ]
+      },
     ]
   },
   {

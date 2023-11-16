@@ -613,8 +613,22 @@ export const sidebarZh: SidebarConfig = {
   ],
   '/docMD/order/': [
     '/docMD/order/',
-  ]
+  ],
 
 
   // =====================Deisgn=========================
+  '/design/ui/': [
+    '/design/ui/',
+  ],
+  '/design/ux/': [
+    '/design/ux/',
+  ],
+
+  // ========================Harmony==========================
+  '/harmony/ark/arkts/': [
+    '/harmony/ark/arkts/',
+  ], 
+  '/harmony/ark/arkui/': [
+    '/harmony/ark/arkui/',
+  ],
 }
