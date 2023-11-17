@@ -223,6 +223,7 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/service/rust/',
+        '/service/rust/安装.md',
       ]
     },
   ],
