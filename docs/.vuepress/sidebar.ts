@@ -596,6 +596,13 @@ export const sidebarZh: SidebarConfig = {
       ]
     },
     {
+      text: '事件',
+      collapsible: true,
+      children: [
+        '/flutter/event/事件传递',
+      ],
+    },
+    {
       text: '日志',
       collapsible: true,
       children: [
