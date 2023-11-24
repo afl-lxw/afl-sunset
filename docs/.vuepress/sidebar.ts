@@ -595,6 +595,15 @@ export const sidebarZh: SidebarConfig = {
         },
       ]
     },
+    {
+      text: '日志',
+      collapsible: true,
+      children: [
+        '/flutter/logs/',
+        '/flutter/logs/isolate/index.md',
+
+      ],
+    }
   ],
   '/reactNative/' :[
     '/reactNative/',
