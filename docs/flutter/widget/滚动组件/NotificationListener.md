@@ -16,6 +16,72 @@ NotificationListener<NotificationType>(
 )
 ```
 
+## NotificationType 类型
+
+- ScrollNotification: 当一个可滚动组件发生滚动时，会生成ScrollNotification。这可以用于监听滚动的位置、方向等信息。
+
+```dart
+NotificationListener<ScrollNotification>(
+  onNotification: (notification) {
+    // 处理滚动通知
+    return true;
+  },
+  child: // 可滚动的组件
+)
+```
+
+- RouteAwareNotification: 当前路由页面的生命周期通知。这可以用于监听页面的进入和退出。
+
+```dart
+Navigator(
+  onGenerateRoute: (settings) {
+    return MaterialPageRoute(
+      builder: (context) {
+        return MyPage();
+      },
+    );
+  },
+)
+```
+
+- SizeChangedLayoutNotification: 当子RenderObject的尺寸发生变化时，会生成SizeChangedLayoutNotification。通常在自定义布局时使用。
+
+```dart
+NotificationListener<SizeChangedLayoutNotification>(
+  onNotification: (notification) {
+    // 处理尺寸变化通知
+    return true;
+  },
+  child: // 包含自定义布局的组件
+)
+```
+
+- FocusNotification: 获取焦点变化的通知，通常用于处理焦点变化时的交互。
+
+```dart
+NotificationListener<FocusNotification>(
+  onNotification: (notification) {
+    // 处理焦点变化通知
+    return true;
+  },
+  child: // 包含可接受焦点的组件
+)
+```
+
+- DraggableScrollableNotification: 当DraggableScrollableSheet的滚动位置发生变化时，会生成通知。
+
+```dart
+NotificationListener<DraggableScrollableNotification>(
+  onNotification: (notification) {
+    // 处理滚动位置变化通知
+    return true;
+  },
+  child: // 包含DraggableScrollableSheet的组件
+)
+```
+
+这只是一小部分Notification，在实际应用中可能会用到更多。选择使用哪种通知类型通常取决于你想要监听的特定事件和场景。
+
 ## 属性及功能
 
 1. onNotification：通知回调函数。

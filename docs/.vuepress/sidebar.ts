@@ -431,6 +431,13 @@ export const sidebarZh: SidebarConfig = {
           ]
         },
         {
+          text: '弹出widget',
+          collapsible: true,
+          children: [
+            '/flutter/widget/弹出组件/showModalBottomSheet.md',
+          ]
+        },
+        {
           text: '导航和路由Widget',
           collapsible: true,
           children: [
