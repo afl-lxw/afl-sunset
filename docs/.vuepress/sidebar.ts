@@ -365,7 +365,7 @@ export const sidebarZh: SidebarConfig = {
             '/flutter/widget/按钮组件/FloatingActionButton.md',
             '/flutter/widget/按钮组件/IconButton.md',
             '/flutter/widget/按钮组件/PopupMenuButton.md',
-            '/flutter/widget/按钮组件/RaisedButton.md',
+            '/flutter/widget/按钮组件/ElevatedButton.md',
           ]
         },
         {
