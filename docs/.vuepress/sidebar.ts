@@ -195,6 +195,27 @@ export const sidebarZh: SidebarConfig = {
       collapsible: true,
       children: [
         '/tests/cypress/',
+        '/tests/cypress/1. 环境搭建',
+        '/tests/cypress/2. 第一个脚本',
+        '/tests/cypress/3. 元素获取',
+        '/tests/cypress/4. 父子元素',
+        '/tests/cypress/5. check',
+        '/tests/cypress/6. 获取元素属性',
+        '/tests/cypress/7. 导航访问',
+        '/tests/cypress/8. 请求与拦截',
+        '/tests/cypress/9. submit',
+        '/tests/cypress/10. as',
+        '/tests/cypress/11. Cookie',
+        '/tests/cypress/12. 接口登录与存储',
+        '/tests/cypress/13. 等待元素执行',
+        '/tests/cypress/14. 滑动到某个元素',
+        '/tests/cypress/15. 滚动到指定位置',
+        '/tests/cypress/16. 读写文件',
+        '/tests/cypress/17. 聚焦元素',
+        '/tests/cypress/18. 屏幕截图',
+        '/tests/cypress/19. 断言',
+
+
       ]
     },
   ],
